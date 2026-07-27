@@ -1,0 +1,9 @@
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.quarto/project-cache/deno-kv-file
+
+/.quarto/
+*.html
+!backlink.html
+_freeze/*
+_site/*

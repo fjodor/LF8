@@ -1,0 +1,85 @@
+---
+title: "REST und SOAP"
+title-slide-attributes:
+  data-background-color: "#D7E6F4"
+subtitle: " "
+format:
+  revealjs:
+    theme: simple
+    logo: libs/_Images/logo-AFBB.svg
+    css: libs/styles.css
+    embed-resources: false
+execute:
+  echo: false
+  eval: true
+  freeze: auto
+  warning: false
+  message: false
+callout-appearance: simple
+---
+
+## Ziele
+
+- Grundprinzipien von REST und SOAP kennen
+- Unterschiede erklären und begründen koennen, wann welcher Ansatz geeignet ist
+
+Kurz:
+
+- REST ist der aktuelle Standard fuer Web-APIs
+- SOAP wird in Enterprise-Umgebungen verwendet.
+
+
+## Themenkreise
+
+| Nr. | Themenkreis | Schwerpunkt |
+|-----|-------------|-------------|
+| 1 | REST | Ressourcenorientierte Webservices, HTTP-Methoden, Statelessness |
+| 2 | SOAP | XML-basierte Webservices, WSDL, Envelope-Struktur |
+
+
+## REST: Definition
+
+- REST ist ein Architekturstil für verteilte Systeme, der auf dem HTTP-Protokoll basiert
+- Ressourcen werden über URLs identifiziert und mit HTTP-Methoden manipuliert.
+
+
+## REST: 6 Prinzipien
+
+::: {style="font-size: 1.8rem"}
+
+| Prinzip | Bedeutung |
+|---------|-----------|
+| Client-Server | Klare Trennung von Client und Server |
+| Stateless (Zustandslos) | Jede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand |
+| Cacheable | Antworten können zwischengespeichert werden |
+| Uniform Interface | Einheitliche Schnittstelle (URLs, HTTP-Methoden) |
+| Layered System | Mehrschichtige Architektur möglich (z.B. Load Balancer dazwischen) |
+| Code on Demand (optional) | Server kann ausführbaren Code an Client senden |
+
+:::
+
+
+## REST: HTTP-Methoden
+
+CRUD = **C**reate - **R**ead - **U**pdate - **D**elete
+
+::: {style="font-size: 1.8rem"}
+
+| HTTP-Methode | CRUD-Operation | Beschreibung | Beispiel |
+|-------------|---------------|-------------|----------|
+| GET | Read | Ressource abrufen | `GET /api/kunden/42` |
+| POST | Create | Neue Ressource erstellen | `POST /api/kunden` |
+| PUT | Update | Ressource vollständig ersetzen | `PUT /api/kunden/42` |
+| PATCH | Update (teilweise) | Ressource teilweise ändern | `PATCH /api/kunden/42` |
+| DELETE | Delete | Ressource löschen | `DELETE /api/kunden/42` |
+
+:::
+
+
+## Vielen Dank!
+
+![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}
+
+::: {style="color: green; text-align: center; font-size: 2.8rem"}
+**Viel Erfolg!**
+:::
