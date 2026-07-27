@@ -1,0 +1,36 @@
+.reveal .slide-logo {
+  position: fixed;
+  top: 5px !important;
+  right: 10px !important;
+  left: auto !important;
+  bottom: auto !important;
+  height: 90px;
+  width: auto;
+  z-index: 1000;
+}
+
+.backlink {
+  position: fixed;
+  top: 12px;
+  left: 20px;
+  z-index: 9999;
+
+  /* Schrift */
+  font-size: 1.2rem;
+  font-family: inherit;
+  text-decoration: none;
+  color: #333;
+
+  /* Button-Styling */
+  padding: 6px 12px;
+  background: rgba(240, 240, 240, 0.85);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  /* leichte Schatten für bessere Lesbarkeit */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.backlink:hover {
+  text-decoration: underline;
+}
