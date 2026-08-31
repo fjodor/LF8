@@ -1,0 +1,70 @@
+---
+title: "Willkommen in LF8!"
+title-slide-attributes:
+  data-background-color: "#D7E6F4"
+subtitle: " "
+format:
+  revealjs:
+    theme: simple
+execute:
+  echo: false
+  eval: true
+  freeze: auto
+  warning: false
+  message: false
+callout-appearance: simple
+---
+
+## Willkommen in LF8!
+`Daten systemübergreifend bereitstellen`
+
+![](libs/_Images/JSON-fix-crashes.jpg)
+
+
+
+## Willkommen in LF10a!
+
+`Daten systemübergreifend bereitstellen`
+
+### Themenübersicht
+
+- Algorithmen, Doctests
+- Grundlagen der Objektorientierten Programmierung (OOP), Klassendiagramme
+- Dateiformate: CSV, JSON, XML
+- REST-APIs
+- Datenbanken, Normalisierung
+- NoSQL
+- SQL: konkrete Programmierung nicht AP1-relevant
+
+
+## Zeitplan und Noten
+
+- LF8 über das Schuljahr verteilt, parallel zu LF7
+- **Klassenarbeit** voraussichtlich im zweiten Block, am 3. November:  
+  Algorithmen, Grundlagen der OOP
+- **Praxisteil** von LF8 bei Herrn Lötzsch
+
+
+## SuS Vorträge {style="font-size: 1.5rem"}
+
+ca. 10 Minuten; Teamarbeit zu zweit möglich: dann tragen beide je einen Teil vor
+
+
+
+
+## Zusatzaufgaben für Fortgeschrittene {style="font-size: 2rem"}
+
+- bla
+
+
+## <!-- -->
+
+![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}
+
+::: {style="text-align: center; font-size: 1rem;"}
+[©torange.biz](https://torange.biz/cup-coffee-30851) CC-BY 4.0
+:::
+
+::: {style="color: green; text-align: center; font-size: 2.8rem"}
+**Viel Erfolg!**
+:::

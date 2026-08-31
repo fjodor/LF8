@@ -26,7 +26,7 @@ callout-appearance: simple
 Kurz:
 
 - REST ist der aktuelle Standard fuer Web-APIs
-- SOAP wird in Enterprise-Umgebungen verwendet.
+- SOAP wird in Enterprise-Umgebungen verwendet
 
 
 ## Themenkreise
