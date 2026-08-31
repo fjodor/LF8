@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "REST-SOAP.html#ziele",
+    "href": "REST-SOAP.html#ziele",
+    "title": "REST und SOAP",
+    "section": "Ziele",
+    "text": "Ziele\n\nGrundprinzipien von REST und SOAP kennen\nUnterschiede erklären und begründen koennen, wann welcher Ansatz geeignet ist\n\nKurz:\n\nREST ist der aktuelle Standard fuer Web-APIs\nSOAP wird in Enterprise-Umgebungen verwendet"
+  },
+  {
+    "objectID": "REST-SOAP.html#themenkreise",
+    "href": "REST-SOAP.html#themenkreise",
+    "title": "REST und SOAP",
+    "section": "Themenkreise",
+    "text": "Themenkreise\n\n\n\n\n\n\n\n\nNr.\nThemenkreis\nSchwerpunkt\n\n\n\n\n1\nREST\nRessourcenorientierte Webservices, HTTP-Methoden, Statelessness\n\n\n2\nSOAP\nXML-basierte Webservices, WSDL, Envelope-Struktur"
+  },
+  {
+    "objectID": "REST-SOAP.html#rest-definition",
+    "href": "REST-SOAP.html#rest-definition",
+    "title": "REST und SOAP",
+    "section": "REST: Definition",
+    "text": "REST: Definition\n\nREST ist ein Architekturstil für verteilte Systeme, der auf dem HTTP-Protokoll basiert\nRessourcen werden über URLs identifiziert und mit HTTP-Methoden manipuliert."
+  },
+  {
+    "objectID": "REST-SOAP.html#rest-6-prinzipien",
+    "href": "REST-SOAP.html#rest-6-prinzipien",
+    "title": "REST und SOAP",
+    "section": "REST: 6 Prinzipien",
+    "text": "REST: 6 Prinzipien\n\n\n\n\n\n\n\n\nPrinzip\nBedeutung\n\n\n\n\nClient-Server\nKlare Trennung von Client und Server\n\n\nStateless (Zustandslos)\nJede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand\n\n\nCacheable\nAntworten können zwischengespeichert werden\n\n\nUniform Interface\nEinheitliche Schnittstelle (URLs, HTTP-Methoden)\n\n\nLayered System\nMehrschichtige Architektur möglich (z.B. Load Balancer dazwischen)\n\n\nCode on Demand (optional)\nServer kann ausführbaren Code an Client senden"
+  },
+  {
+    "objectID": "REST-SOAP.html#rest-http-methoden",
+    "href": "REST-SOAP.html#rest-http-methoden",
+    "title": "REST und SOAP",
+    "section": "REST: HTTP-Methoden",
+    "text": "REST: HTTP-Methoden\nCRUD = Create - Read - Update - Delete\n\n\n\n\n\n\n\n\n\n\nHTTP-Methode\nCRUD-Operation\nBeschreibung\nBeispiel\n\n\n\n\nGET\nRead\nRessource abrufen\nGET /api/kunden/42\n\n\nPOST\nCreate\nNeue Ressource erstellen\nPOST /api/kunden\n\n\nPUT\nUpdate\nRessource vollständig ersetzen\nPUT /api/kunden/42\n\n\nPATCH\nUpdate (teilweise)\nRessource teilweise ändern\nPATCH /api/kunden/42\n\n\nDELETE\nDelete\nRessource löschen\nDELETE /api/kunden/42"
+  },
+  {
+    "objectID": "REST-SOAP.html#vielen-dank",
+    "href": "REST-SOAP.html#vielen-dank",
+    "title": "REST und SOAP",
+    "section": "Vielen Dank!",
+    "text": "Vielen Dank!\n\n\nViel Erfolg!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LF8",
+    "section": "",
+    "text": "Willkommen!\nHier sammle ich Unterlagen zu LF8.\nDer Quellcode liegt hier: https://github.com/fjodor/LF8",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#willkommen-in-lf8",
+    "href": "01_Willkommen_Struktur.html#willkommen-in-lf8",
+    "title": "Willkommen in LF8!",
+    "section": "Willkommen in LF8!",
+    "text": "Willkommen in LF8!\nDaten systemübergreifend bereitstellen",
+    "crumbs": [
+      "01 Willkommen zu LF8 - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#willkommen-in-lf8-1",
+    "href": "01_Willkommen_Struktur.html#willkommen-in-lf8-1",
+    "title": "Willkommen in LF8!",
+    "section": "Willkommen in LF8!",
+    "text": "Willkommen in LF8!\nDaten systemübergreifend bereitstellen\nThemenübersicht\n\n\nAlgorithmen, Doctests\nGrundlagen der Objektorientierten Programmierung (OOP), Klassendiagramme\nDateiformate: CSV, JSON, XML\nREST-APIs\nNoSQL\nDatenbanken, Normalisierung\nSQL: konkrete Programmierung nicht AP1-relevant",
+    "crumbs": [
+      "01 Willkommen zu LF8 - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#zeitplan-und-noten",
+    "href": "01_Willkommen_Struktur.html#zeitplan-und-noten",
+    "title": "Willkommen in LF8!",
+    "section": "Zeitplan und Noten",
+    "text": "Zeitplan und Noten\n\nLF8 über das Schuljahr verteilt, parallel zu LF7\nKlassenarbeit voraussichtlich im zweiten Block, am 3. November:\nAlgorithmen, Grundlagen der OOP\nPraxisteil von LF8 bei Herrn Lötzsch",
+    "crumbs": [
+      "01 Willkommen zu LF8 - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#sus-vorträge",
+    "href": "01_Willkommen_Struktur.html#sus-vorträge",
+    "title": "Willkommen in LF8!",
+    "section": "SuS Vorträge",
+    "text": "SuS Vorträge\nca. 10 Minuten; Teamarbeit zu zweit möglich: dann tragen beide je einen Teil vor\n\nMontag, 07. September:\nEinführung in OOP: Was sind Klassen, was sind Objekte im Sinne der OOP?\nMontag, 02. November:\n\nDas Dateiformat csv: Aufbau, Lesbarkeit; Was sind csv Injections?\nDas Dateiformat XML: Aufbau, Lesbarkeit, Einsatz-Beispiele\nDas Dateiformat JSON: Aufbau, Lesbarkeit, Einsatz-Beispiele\n\nDienstag, 10. November:\nEinführung in REST-APIs: Nutzen, Aufbau, Einsatz-Beispiele\nMontag, 14. Dezember:\n\nEinführung in NoSQL-Datenbanken: Grundideen, Einsatz-Beispiele\nRelationale Datenbanken: Datenbank-Anomalien\nWelche Anomalien gibt es? Wie entstehen sie?",
+    "crumbs": [
+      "01 Willkommen zu LF8 - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#zusatzaufgaben-für-fortgeschrittene",
+    "href": "01_Willkommen_Struktur.html#zusatzaufgaben-für-fortgeschrittene",
+    "title": "Willkommen in LF8!",
+    "section": "Zusatzaufgaben für Fortgeschrittene",
+    "text": "Zusatzaufgaben für Fortgeschrittene\n\nSortieralgorithmen: vertiefende Programmierung\n\nMerge Sort, Quick Sort oder Heap Sort implementieren\nSortieralgorithmen benchmarken: mit größeren Daten “füttern”, Zeitmessungen dokumentieren und darstellen\n\nDaten mit bestimmten Eigenschaften präparieren: z. B. fast sortierte Liste, “falsch herum” sortierte Liste, willkürlich unsortierte Liste etc.\nErgebnistabelle; Bonus: Sortier- oder Filteroptionen\nBonus: Grafischer Vergleich der Ergebnisse\nUI bauen, um Daten einzugeben oder gar nach Optionen zu simulieren",
+    "crumbs": [
+      "01 Willkommen zu LF8 - Themen und Zeitplan"
+    ]
+  },
+  {
+    "objectID": "01_Willkommen_Struktur.html#section",
+    "href": "01_Willkommen_Struktur.html#section",
+    "title": "Willkommen in LF8!",
+    "section": "",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
+    "crumbs": [
+      "01 Willkommen zu LF8 - Themen und Zeitplan"
+    ]
+  }
+]
