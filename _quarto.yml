@@ -16,6 +16,7 @@ website:
 
 format:
   revealjs:
+    embed-resources: true
     include-after-body: libs/backlink.html
     css: libs/styles.css
     logo: libs/_Images/logo-AFBB.svg
