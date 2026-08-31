@@ -11,6 +11,8 @@ website:
         text: Home
       - href: 01_Willkommen_Struktur.qmd
         text: 01 Willkommen zu LF8 - Themen und Zeitplan
+      - href: 02_Algorithmen.qmd
+        text: 02 Algorithmen
 
 format:
   revealjs:

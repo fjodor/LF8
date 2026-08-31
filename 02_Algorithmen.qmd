@@ -1,0 +1,141 @@
+---
+title: "Algorithmen"
+title-slide-attributes:
+  data-background-color: "#D7E6F4"
+subtitle: " "
+format:
+  revealjs:
+    theme: simple
+execute:
+  echo: false
+  eval: true
+  freeze: auto
+  warning: false
+  message: false
+callout-appearance: simple
+---
+
+
+## Sortieralgorithmen: Bubble Sort {style="font-size: 2.2rem"}
+
+::: incremental
+
+- Vergleicht wiederholt benachbarte Elemente und vertauscht sie, wenn sie sich in der falschen Reihenfolge befinden
+- Größte Elemente "wandern" pro Durchlauf nach rechts (wie Blasen nach oben)
+- Wird wiederholt, bis keine Vertauschungen mehr nötig sind
+- Vorteil: relativ einfach zu verstehen
+- Nachteil: ineffizient bei großen Datenmengen
+- Laufzeit: O(n²)
+
+:::
+
+
+## Was bedeutet O(n²)?
+
+- Aussprache: „O von n Quadrat“
+- O steht für „Order of“ → beschreibt die Größenordnung des Wachstums
+- n ist die Eingabegröße (z. B. Anzahl der Listenelemente)
+- Quadratisches Wachstum: **Verdoppelt** man n, **vervierfacht** sich die Laufzeit
+- Typisch bei Algorithmen mit verschachtelten Schleifen
+
+
+## Sortieralgorithmen: Selection Sort
+
+::: incremental
+
+- Sucht im unsortierten Teil das kleinste (oder größte) Element
+- Tauscht es an die aktuelle Position
+- Verschiebt die Grenze zwischen sortiertem und unsortiertem Bereich Schritt für Schritt
+- Wenige Vertauschungen, aber viele Vergleiche
+- Laufzeit: O(n²)
+
+:::
+
+
+## Sortieralgorithmen: Insertion Sort
+
+::: incremental
+
+- Baut die sortierte Liste schrittweise auf
+- Nimmt das nächste Element und fügt es an der richtigen Stelle im bereits sortierten Teil ein
+- Gut für kleine oder fast sortierte Listen
+- Intuitiv (ähnlich wie Kartensortieren in der Hand)
+- Laufzeit: O(n²), aber sehr schnell für fast sortierte Daten
+
+:::
+
+
+## Sortieralgorithmen: Merge Sort
+
+::: incremental
+
+- Teilt die Liste rekursiv in immer kleinere Hälften
+- Sortiert die Teilstücke und führt sie geordnet wieder zusammen („merge“)
+- Nutzt das Prinzip *Divide and Conquer* ("Teile und herrsche")
+- Sehr effizient, auch bei großen Datenmengen
+- Laufzeit: O(n log n)
+- Stabil und gut parallelisierbar
+
+:::
+
+
+## Merge Sort vs. Bubble / Selection / Insertion Sort
+
+- Deutlich schneller: O(n log n) statt O(n²)
+- Komplexer zu implementieren <br> (Rekursion + Zusammenführen)
+- Benötigt zusätzlichen Speicher zum Mergen
+- Für große Datenmengen klar überlegen
+- Während die einfachen Sortierverfahren oft **verschachtelte Schleifen** nutzen, arbeitet Merge Sort mit **Teilen und Zusammenfügen**
+
+
+## Sortieralgorithmen: Quick Sort
+
+::: {.incremental style="font-size: 2rem"}
+
+- **Teile-und-Herrsche**-Algorithmus: zerlegt Problem in kleinere Teilprobleme -> **Rekursion**!
+- Wählt ein Element als **Pivot** aus (z. B. erstes, letztes oder mittleres)
+- **Partitionierung**
+  + Alle Elemente **kleiner** als Pivot nach links, E. **größer** als P. nach rechts
+  + Pivot wird an seiner endgültigen Position platziert
+- Laufzeiten:
+  + Günstiger Fall: O(n log n)
+  + Ungünstiger Fall: max. O(𝑛²) (z. B. wenn Pivot ungünstig gewählt wird)
+- Geringer Speicherbedarf: meist wird im Array (**in place**) umsortiert
+- Nicht stabil: relative Reihenfolge gleicher Elemente kann sich ändern!
+
+:::
+
+
+## O(n log n) vs. O(n²)
+
+| n (Länge Liste) | n log2(n) (ungefähr) | n²            |
+|---------:|----------------------:|---------------:|
+| 10       | 33                   | 100            |
+| 100      | 664                  | 10 000         |
+| 1 000    | 9 966                | 1 000 000      |
+| 10 000   | 132 877              | 100 000 000    |
+| 1 000 000| 19 931 568           | 1 000 000 000 000 |
+
+
+---
+
+### Quadratische vs. Logarithmische Sortierverfahren
+
+::: {style="font-size: 1.7rem"}
+
+| Quadratische Sortierverfahren | Logarithmische Sortierverfahren |
+|------------------------------|----------------------------------|
+| **Vorteile**<br>– Einfache Implementierung<br>– Gut für kleine Datenmengen<br>– Leicht verständlich<br>– Einfaches Debugging | **Vorteile**<br>– Effizientere und schnellere Sortierung<br>– Gute Skalierbarkeit<br>– Häufiger Standard in Bibliotheken |
+| **Nachteile**<br>– Je nach Datenmenge sehr ineffizient<br>– Viele unnötige Vertauschungen<br>– Nicht optimal für moderne Hardware<br>– Nicht für verteilte Systeme geeignet | **Nachteile**<br>– Aufwändige Implementierung<br>– Benötigt ggf. zusätzlichen Speicherplatz<br>– Ggf. höherer Verwaltungsaufwand |
+| **Beispiele**<br>– Bubble Sort<br>– Selection Sort<br>– Insertion Sort | **Beispiele**<br>– Merge Sort<br>– Quick Sort |
+
+:::
+
+
+## <!-- -->
+
+![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}
+
+::: {style="color: green; text-align: center; font-size: 2.8rem"}
+**Viel Erfolg mit allen Algorithmen!**
+:::
