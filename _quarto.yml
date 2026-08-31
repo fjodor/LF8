@@ -9,10 +9,8 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: aa.qmd
-        text: aaa
-      - href: bb.qmd
-        text: bbb
+      - href: 01_Willkommen_Struktur.qmd
+        text: 01 Willkommen zu LF8 - Themen und Zeitplan
 
 format:
   revealjs:

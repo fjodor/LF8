@@ -22,19 +22,23 @@ callout-appearance: simple
 
 
 
-## Willkommen in LF10a!
+## Willkommen in LF8!
 
 `Daten systemübergreifend bereitstellen`
 
 ### Themenübersicht
 
+:::  {style="font-size: 2rem"}
+
 - Algorithmen, Doctests
 - Grundlagen der Objektorientierten Programmierung (OOP), Klassendiagramme
 - Dateiformate: CSV, JSON, XML
 - REST-APIs
-- Datenbanken, Normalisierung
 - NoSQL
+- Datenbanken, Normalisierung
 - SQL: konkrete Programmierung nicht AP1-relevant
+
+:::
 
 
 ## Zeitplan und Noten
@@ -45,16 +49,33 @@ callout-appearance: simple
 - **Praxisteil** von LF8 bei Herrn Lötzsch
 
 
-## SuS Vorträge {style="font-size: 1.5rem"}
+## SuS Vorträge {style="font-size: 1.7rem"}
 
 ca. 10 Minuten; Teamarbeit zu zweit möglich: dann tragen beide je einen Teil vor
 
-
+- Montag, 07. September:  
+  **Einführung in OOP**: Was sind Klassen, was sind Objekte im Sinne der OOP?
+- Montag, 02. November: 
+  + **Das Dateiformat csv**: Aufbau, Lesbarkeit; Was sind csv Injections?
+  + **Das Dateiformat XML**: Aufbau, Lesbarkeit, Einsatz-Beispiele
+  + **Das Dateiformat JSON**: Aufbau, Lesbarkeit, Einsatz-Beispiele
+- Dienstag, 10. November:  
+  **Einführung in REST-APIs**: Nutzen, Aufbau, Einsatz-Beispiele
+- Montag, 14. Dezember:
+  + **Einführung in NoSQL-Datenbanken**: Grundideen, Einsatz-Beispiele
+  + **Relationale Datenbanken: Datenbank-Anomalien**  
+    Welche Anomalien gibt es? Wie entstehen sie?
 
 
 ## Zusatzaufgaben für Fortgeschrittene {style="font-size: 2rem"}
 
-- bla
+- Sortieralgorithmen: vertiefende Programmierung  
+- Merge Sort, Quick Sort oder Heap Sort implementieren
+- Sortieralgorithmen benchmarken: mit größeren Daten "füttern", Zeitmessungen dokumentieren und darstellen
+  + Daten mit bestimmten Eigenschaften präparieren: z. B. fast sortierte Liste, "falsch herum" sortierte Liste, willkürlich unsortierte Liste etc.
+  + Ergebnistabelle; Bonus: Sortier- oder Filteroptionen
+  + Bonus: Grafischer Vergleich der Ergebnisse
+  + UI bauen, um Daten einzugeben oder gar nach Optionen zu simulieren 
 
 
 ## <!-- -->

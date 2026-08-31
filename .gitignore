@@ -7,3 +7,5 @@
 !backlink.html
 _freeze/*
 _site/*
+
+**/*.quarto_ipynb
