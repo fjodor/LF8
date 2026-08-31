@@ -110,5 +110,95 @@
     "crumbs": [
       "01 Willkommen zu LF8 - Themen und Zeitplan"
     ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#sortieralgorithmen-bubble-sort",
+    "href": "02_Algorithmen.html#sortieralgorithmen-bubble-sort",
+    "title": "Algorithmen",
+    "section": "Sortieralgorithmen: Bubble Sort",
+    "text": "Sortieralgorithmen: Bubble Sort\n\nVergleicht wiederholt benachbarte Elemente und vertauscht sie, wenn sie sich in der falschen Reihenfolge befinden\nGrößte Elemente “wandern” pro Durchlauf nach rechts (wie Blasen nach oben)\nWird wiederholt, bis keine Vertauschungen mehr nötig sind\nVorteil: relativ einfach zu verstehen\nNachteil: ineffizient bei großen Datenmengen\nLaufzeit: O(n²)",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#was-bedeutet-on²",
+    "href": "02_Algorithmen.html#was-bedeutet-on²",
+    "title": "Algorithmen",
+    "section": "Was bedeutet O(n²)?",
+    "text": "Was bedeutet O(n²)?\n\nAussprache: „O von n Quadrat“\nO steht für „Order of“ → beschreibt die Größenordnung des Wachstums\nn ist die Eingabegröße (z. B. Anzahl der Listenelemente)\nQuadratisches Wachstum: Verdoppelt man n, vervierfacht sich die Laufzeit\nTypisch bei Algorithmen mit verschachtelten Schleifen",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#sortieralgorithmen-selection-sort",
+    "href": "02_Algorithmen.html#sortieralgorithmen-selection-sort",
+    "title": "Algorithmen",
+    "section": "Sortieralgorithmen: Selection Sort",
+    "text": "Sortieralgorithmen: Selection Sort\n\nSucht im unsortierten Teil das kleinste (oder größte) Element\nTauscht es an die aktuelle Position\nVerschiebt die Grenze zwischen sortiertem und unsortiertem Bereich Schritt für Schritt\nWenige Vertauschungen, aber viele Vergleiche\nLaufzeit: O(n²)",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#sortieralgorithmen-insertion-sort",
+    "href": "02_Algorithmen.html#sortieralgorithmen-insertion-sort",
+    "title": "Algorithmen",
+    "section": "Sortieralgorithmen: Insertion Sort",
+    "text": "Sortieralgorithmen: Insertion Sort\n\nBaut die sortierte Liste schrittweise auf\nNimmt das nächste Element und fügt es an der richtigen Stelle im bereits sortierten Teil ein\nGut für kleine oder fast sortierte Listen\nIntuitiv (ähnlich wie Kartensortieren in der Hand)\nLaufzeit: O(n²), aber sehr schnell für fast sortierte Daten",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#sortieralgorithmen-merge-sort",
+    "href": "02_Algorithmen.html#sortieralgorithmen-merge-sort",
+    "title": "Algorithmen",
+    "section": "Sortieralgorithmen: Merge Sort",
+    "text": "Sortieralgorithmen: Merge Sort\n\nTeilt die Liste rekursiv in immer kleinere Hälften\nSortiert die Teilstücke und führt sie geordnet wieder zusammen („merge“)\nNutzt das Prinzip Divide and Conquer (“Teile und herrsche”)\nSehr effizient, auch bei großen Datenmengen\nLaufzeit: O(n log n)\nStabil und gut parallelisierbar",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#merge-sort-vs.-bubble-selection-insertion-sort",
+    "href": "02_Algorithmen.html#merge-sort-vs.-bubble-selection-insertion-sort",
+    "title": "Algorithmen",
+    "section": "Merge Sort vs. Bubble / Selection / Insertion Sort",
+    "text": "Merge Sort vs. Bubble / Selection / Insertion Sort\n\nDeutlich schneller: O(n log n) statt O(n²)\nKomplexer zu implementieren  (Rekursion + Zusammenführen)\nBenötigt zusätzlichen Speicher zum Mergen\nFür große Datenmengen klar überlegen\nWährend die einfachen Sortierverfahren oft verschachtelte Schleifen nutzen, arbeitet Merge Sort mit Teilen und Zusammenfügen",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#sortieralgorithmen-quick-sort",
+    "href": "02_Algorithmen.html#sortieralgorithmen-quick-sort",
+    "title": "Algorithmen",
+    "section": "Sortieralgorithmen: Quick Sort",
+    "text": "Sortieralgorithmen: Quick Sort\n\n\nTeile-und-Herrsche-Algorithmus: zerlegt Problem in kleinere Teilprobleme -&gt; Rekursion!\nWählt ein Element als Pivot aus (z. B. erstes, letztes oder mittleres)\nPartitionierung\n\nAlle Elemente kleiner als Pivot nach links, E. größer als P. nach rechts\nPivot wird an seiner endgültigen Position platziert\n\nLaufzeiten:\n\nGünstiger Fall: O(n log n)\nUngünstiger Fall: max. O(𝑛²) (z. B. wenn Pivot ungünstig gewählt wird)\n\nGeringer Speicherbedarf: meist wird im Array (in place) umsortiert\nNicht stabil: relative Reihenfolge gleicher Elemente kann sich ändern!",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#on-log-n-vs.-on²",
+    "href": "02_Algorithmen.html#on-log-n-vs.-on²",
+    "title": "Algorithmen",
+    "section": "O(n log n) vs. O(n²)",
+    "text": "O(n log n) vs. O(n²)\n\n\n\nn (Länge Liste)\nn log2(n) (ungefähr)\nn²\n\n\n\n\n10\n33\n100\n\n\n100\n664\n10 000\n\n\n1 000\n9 966\n1 000 000\n\n\n10 000\n132 877\n100 000 000\n\n\n1 000 000\n19 931 568\n1 000 000 000 000",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#section",
+    "href": "02_Algorithmen.html#section",
+    "title": "Algorithmen",
+    "section": "",
+    "text": "Viel Erfolg mit allen Algorithmen!",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
   }
 ]

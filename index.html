@@ -123,6 +123,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">01 Willkommen zu LF8 - Themen und Zeitplan</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_Algorithmen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">02 Algorithmen</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -233,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/fjodor\.github\.io\/LF8\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
