@@ -15,6 +15,48 @@ execute:
 callout-appearance: simple
 ---
 
+::::: {.content-visible when-profile="internal"}
+
+## Warum sollen Systemintegratoren programmieren?
+
+Beherrschung moderner IT-Infrastrukturen erfordert:
+
+::: {.incremental style="font-size: 2rem"}
+
+- Automatisierung
+- Skripting
+- API-Verständnis
+
+:::
+
+::: fragment
+
+Wer Systeme baut, muss sie auch automatisieren, integrieren und analysieren können.
+
+:::
+
+
+## Warum sollen SIs programmieren?
+
+::: {.incremental style="font-size: 1.6rem"}
+
+- Automatisierung von Routineaufgaben: Userverwaltung, Backups, Logrotation, Updates, Monitoring; ohne Skripte manuell, fehleranfällig, langsam
+- Skripting für Betriebssysteme: PowerShell, Bash, Python sind Standard für Admins
+- Infrastructure as Code: Ansible, Terraform, Cloud-Deployments basieren auf deklarativer oder prozeduraler "Programmierung"
+- API-Verständnis: Moderne Systeme kommunizieren über REST-APIs
+- Fehleranalyse: Logs parsen, Daten filtern, Zusammenhänge erkennen
+- Automatisiertes Deployment: CI/CD-Pipelines, Container, Cloud-Umgebungen
+- Konfigurationsmanagement: Tools wie Puppet, Chef, Ansible nutzen YAML, Python, DSLs
+- Netzwerkautomatisierung: Switch-Konfigurationen, Firewall-Regeln, VLAN-Rollouts: heute oft automatisiert statt manuell
+- Sicherheitsaufgaben: Schwachstellenscans, Log-Korrelation, Incident-Response: Skripte
+- Cloud-Kompetenz: AWS, Azure, GCP: alles API- und Code-getrieben
+- DevOps-Kultur verlangt, dass Admins und Entwickler gemeinsam arbeiten
+- Prüfungsrelevanz: AP1 / AP2 enthalten regelmäßig Skript- und Automatisierungsaufgaben
+
+:::
+
+:::::
+
 
 ## Sortieralgorithmen: Bubble Sort {style="font-size: 2.2rem"}
 
@@ -28,6 +70,10 @@ callout-appearance: simple
 - Laufzeit: O(n²)
 
 :::
+
+
+## Bubble Sort: Python
+
 
 
 ## Was bedeutet O(n²)?
