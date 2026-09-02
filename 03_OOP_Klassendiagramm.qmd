@@ -29,6 +29,40 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 - Einführung in Pseudocode mit OOP-Konzepten
 
 
+## OOP: Grundideen
+
+- Kapselung *(Encapsulation)*
+- Vererbung
+- Polymorphie
+- Interfaces
+
+
+## OOP: Grundideen
+
+### Kapselung *(Encapsulation)*
+
+- interne Daten eines Objekts werden vor direktem Zugriff geschützt
+- Zugriff erfolgt über definierte Methoden (Getter/Setter)
+- Zugriffsmodifikatoren (public, private, protected) steuern die Sichtbarkeit.
+
+### Vererbung
+
+- eine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen
+- fördert Wiederverwendbarkeit und Hierarchiebildung
+
+### Polymorphie ("Vielgestaltigkeit")
+
+- Objekte verschiedener Klassen können über eine gemeinsame Schnittstelle angesprochen werden
+- Varianten: Überladen (Overloading) / Überschreiben (Overriding)
+
+### Schnittstellen *(Interfaces)*
+
+- definiert, **welche** Methoden eine Klasse implementieren muss
+- lässt offen, **wie**
+- ermöglichen lose Kopplung und Austauschbarkeit von Komponenten
+
+
+
 
 
 ## <!-- -->
