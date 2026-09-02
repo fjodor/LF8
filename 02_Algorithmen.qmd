@@ -129,6 +129,36 @@ range(0, 10, 2)
 ![](libs/_Images/Bubble-sort.gif)
 
 
+::::: {.content-visible when-profile="internal"}
+
+## Python: doctests
+
+Doctests sind eingebettete Tests in Docstrings, die wie interaktive Python‑Beispiele aussehen (>>>).
+
+Zweck:
+
+- Dokumentation und Test in einem Schritt
+- Zeigen, wie eine Funktion benutzt wird
+- Prüfen automatisch, ob die Beispiele noch stimmen
+
+
+## Python: doctests
+
+Beispiel:
+
+```python
+def add(a, b):
+    """
+    Add two numbers.
+
+    >>> add(2, 3)
+    5
+    """
+    return a + b
+```
+
+:::::
+
 
 ## Was bedeutet O(n²)?
 
