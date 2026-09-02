@@ -1,5 +1,5 @@
 ---
-title: "Algorithmen"
+title: " Python und Algorithmen"
 title-slide-attributes:
   data-background-color: "#D7E6F4"
 subtitle: " "
@@ -7,6 +7,9 @@ format:
   revealjs:
     theme: simple
 execute:
+  # python: "C:/Users/User/AppData/Local/Python/pythoncore-3.14-64/python.exe"
+  # python: python
+  # jupyter: python3
   echo: false
   eval: true
   freeze: auto
@@ -58,6 +61,55 @@ Wer Systeme baut, muss sie auch automatisieren, integrieren und analysieren kön
 :::::
 
 
+## Python: for-Schleifen
+
+Eine **for‑Schleife** wiederholt Anweisungen für jedes Element in einer Sequenz.
+
+```python
+for i in range(5):
+    print("Durchlauf:", i)
+```
+
+::: fragment
+
+```python
+Durchlauf: 0
+Durchlauf: 1
+Durchlauf: 2
+Durchlauf: 3
+Durchlauf: 4
+```
+
+:::
+
+
+## Python: range() verstehen
+
+`range()` liefert eine Folge von Zahlen.
+
+:::: columns
+::: column
+
+```python
+range(5)
+range(2, 6)
+range(0, 10, 2)
+```
+
+:::
+
+::: {.column .fragment}
+
+```python
+0,1,2,3,4
+2,3,4,5
+0,2,4,6,8
+```
+
+:::
+::::
+
+
 ## Sortieralgorithmen: Bubble Sort {style="font-size: 2.2rem"}
 
 ::: incremental
@@ -72,7 +124,9 @@ Wer Systeme baut, muss sie auch automatisieren, integrieren und analysieren kön
 :::
 
 
-## Bubble Sort: Python
+## Bubble Sort: Ablauf
+
+![](libs/_Images/Bubble-sort.gif)
 
 
 
@@ -98,6 +152,11 @@ Wer Systeme baut, muss sie auch automatisieren, integrieren und analysieren kön
 :::
 
 
+## Selection Sort: Ablauf
+
+![](libs/_Images/Selection-sort.gif)
+
+
 ## Sortieralgorithmen: Insertion Sort
 
 ::: incremental
@@ -109,6 +168,11 @@ Wer Systeme baut, muss sie auch automatisieren, integrieren und analysieren kön
 - Laufzeit: O(n²), aber sehr schnell für fast sortierte Daten
 
 :::
+
+
+## Insertion Sort: Ablauf
+
+![](libs/_Images/Insertion-sort.gif)
 
 
 ## Sortieralgorithmen: Merge Sort
