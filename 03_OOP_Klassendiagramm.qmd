@@ -62,6 +62,74 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 - ermöglichen lose Kopplung und Austauschbarkeit von Komponenten
 
 
+## Kapselung
+
+#### Definition
+
+- interne Daten eines Objekts werden vor direktem Zugriff von außen geschützt werden
+- Zugriff erfolgt ausschließlich über definierte Methoden (Getter/Setter)
+
+#### Zugriffsmodifikatoren
+
+| Modifikator | Sichtbarkeit | UML-Symbol |
+|-------------|-------------|------------|
+| public | Überall sichtbar | + |
+| private | Nur innerhalb der eigenen Klasse | - |
+| protected | Eigene Klasse + Unterklassen | # |
+| package/internal | Innerhalb des Pakets/Moduls | ~ |
+
+
+## Kapselung: UML
+
+```
++------------------------------+
+|          Konto               |
+|------------------------------|
+| - kontostand: double         |
+|------------------------------|
+| + getKontostand(): double    |
+| + einzahlen(betrag: double)  |
+| + abheben(betrag: double)    |
++------------------------------+
+```
+
+- Durch Kapselung wird sichergestellt, dass der Kontostand nicht direkt auf einen negativen Wert gesetzt werden kann.
+- Nur über die Methoden `einzahlen()` und `abheben()` – die eine Validierung durchführen – kann der Wert verändert werden.
+
+
+## Polymorphie
+
+**Definition:** Polymorphie (Vielgestaltigkeit) bedeutet, dass Objekte verschiedener Klassen über eine gemeinsame Schnittstelle angesprochen werden können und sich **unterschiedlich verhalten**.
+
+#### Zwei Arten
+
+| Art | Name | Beschreibung | Beispiel |
+|-----|------|-------------|----------|
+| Überladen | Overloading | Gleicher Methodenname, verschiedene Parameter | `berechne(a)` und `berechne(a, b)` |
+| Überschreiben | Overriding | Kindklasse überschreibt Methode der Elternklasse | `Hund.sprechen()` statt `Tier.sprechen()` |
+
+
+## Schnittstellen: UML-Notation
+
+```
++-------------------+
+| <<interface>>     |
+| Druckbar          |
+|-------------------|
+|                   |
+|-------------------|
+| + drucke(): void  |
++-------------------+
+        ^
+        |
+  implementiert
+        |       
++-------------------+
+| Rechnung          |
+|-------------------|
+| + drucke(): void  |
++-------------------+
+```
 
 
 
