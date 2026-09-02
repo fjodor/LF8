@@ -97,6 +97,47 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 - Nur über die Methoden `einzahlen()` und `abheben()` – die eine Validierung durchführen – kann der Wert verändert werden.
 
 
+## Vererbung: UML
+
+Eine Klasse (Kindklasse / Unterklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse / Oberklasse) übernehmen und erweitern.
+
+#### UML-Darstellung
+
+```
++----------------------------+
+|       Fahrzeug             |
+|----------------------------|
+| # marke: String            |
+| # baujahr: int             |
+|----------------------------|
+| + beschreibung(): String   |
++----------------------------+
+         ^            ^
+         |            |
+    erbt von      erbt von
+         |            |
++----------------+  +--------------------+
+|     PKW        |  |       LKW          |
+|----------------|  |--------------------|
+| - anzahlSitze  |  | - ladekapazitaet   |
+|----------------|  |--------------------|
+| + beschreibung |  | + beschreibung()   |
++----------------+  +--------------------+
+```
+
+
+## Vererbung: Begriffe
+
+- **Oberklasse (Superklasse)** – Klasse, von der geerbt wird
+- **Unterklasse (Subklasse)** – Klasse, die erbt
+- **super** – Zugriff auf Methoden/Konstruktor der Oberklasse
+- **Ist-ein-Beziehung** – PKW ist ein Fahrzeug (Vererbung)
+- **Hat-ein-Beziehung** – Fahrzeug hat einen Motor (Komposition, keine Vererbung)
+
+- Durch Vererbung müssen gemeinsame Attribute (marke, baujahr) und Methoden nur einmal in der Elternklasse definiert werden.
+- Kindklassen fügen spezifische Attribute hinzu und können Methoden überschreiben.
+
+
 ## Polymorphie
 
 **Definition:** Polymorphie (Vielgestaltigkeit) bedeutet, dass Objekte verschiedener Klassen über eine gemeinsame Schnittstelle angesprochen werden können und sich **unterschiedlich verhalten**.
@@ -107,6 +148,7 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 |-----|------|-------------|----------|
 | Überladen | Overloading | Gleicher Methodenname, verschiedene Parameter | `berechne(a)` und `berechne(a, b)` |
 | Überschreiben | Overriding | Kindklasse überschreibt Methode der Elternklasse | `Hund.sprechen()` statt `Tier.sprechen()` |
+
 
 
 ## Schnittstellen: UML-Notation
