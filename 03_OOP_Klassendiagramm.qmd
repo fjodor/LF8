@@ -28,6 +28,39 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 - Einführung in Pseudocode mit OOP-Konzepten
 
 
+## OOP: Was ist eine Klasse?
+
+::: {.incremental style="font-size: 2rem"}
+
+- Eine Klasse ist ein **Bauplan für die Erstellung von Objekten.**
+- Klasse definiert Attribute und Methoden eines Objekts
+  + Attribute: Eigenschaften, Variablen; repräsentieren den **Zustand**
+  + Methoden: Funktionen; repräsentieren das **Verhalten**
+- Klasse ermöglicht Erstellung **mehrerer Objekte mit ähnlichen Merkmalen und Verhaltensweisen**
+:::
+
+::: notes
+Lernkarten AP2 2025 Nr. 137
+:::
+
+
+## OOP: Was ist ein Objekt?
+
+::: {.incremental style="font-size: 2rem"}
+
+- eine konkrete Instanz einer Klasse
+- besitzt die Attribute und Methoden, die in seiner Klasse definiert sind
+- **Jedes Objekt hat seinen eigenen Satz von *Werten* für die Attribute**.
+- Attribute -> Zustand des Objekts
+- Methoden -> Verhalten des Objekts, das auf diesem Zustand operiert
+- **Ein Objekt ist eine Verkapselung von Daten (Zustand) und den dazu gehörenden Operationen (Verhalten).**
+:::
+
+::: notes
+Lernkarten AP2 2025 Nr. 140
+:::
+
+
 ## OOP: Grundideen
 
 - Kapselung *(Encapsulation)*
@@ -320,6 +353,26 @@ Quelle: Belegsatz zu AP2, Sommer 2026
 +----------------+  +----------------+
 ```
 
+:::
+
+
+## Klassendiagramm: Erläuterung
+
+:::: {style="font-size: 1.8rem"}
+
+Das **Klassendiagramm** zeigt Klassen, ihre Attribute und Methoden sowie Beziehungen zwischen Klassen.
+
+::: incremental 
+- **Klassen und Objekte:** Welche Klassen gibt es und welche Objekte repräsentieren sie?
+- **Attribute und Operationen:** Welche Eigenschaften und Verhaltensweisen haben die Klassen?
+- **Beziehungen:** Wie sind die Klassen miteinander verknüpft (z. B. durch Assoziationen und Vererbungen)?
+- **Sichtbarkeit:** Welche Attribute und Operationen sind öffentlich, privat oder geschützt?
+- **Kardinalität:** Wie viele Instanzen einer Klasse können mit einer anderen in Beziehung stehen?
+:::
+::::
+
+::: notes
+Lernkarten AP2 2025 Nr. 131
 :::
 
 
