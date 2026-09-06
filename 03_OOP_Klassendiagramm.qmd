@@ -88,75 +88,14 @@ Lernkarte AP2 2025 Nr. 142
 #### IHK-Standard in Prüfungen
 
 Zugriffs-<br>modifikator | Symbol | Bedeutung | Verwendung
-:-----:|:---:|:-----------:|:---:
+:-----|:---:|:-----------|:---
 `private` | - | Zugriff **nur innerhalb der Klasse** erlaubt, in der sie definiert sind | Attribute
 `public` | + | Zugriff **überall** erlaubt, sowohl innerhalb als auch außerhalb der Klasse | Operation / Methode
 
 #### UML-Beispiel
 
 :::: columns
-::: {.column .fragment}
-
-```
-+------------------------------+
-|          Konto               |
-|------------------------------|
-| - kontostand: double         |
-|------------------------------|
-| + einzahlen(betrag: double)  |
-| + abheben(betrag: double)    |
-+------------------------------+
-```
-
-:::
-
-::: {.column .fragment}
-
-- Niemand darf direkt auf den Kontostand zugreifen und ihn verändern
-- Zugriff nur über die Methoden `einzahlen()` und `abheben()`
-
-:::
-::::
-:::::
-
-
-## OOP: Vererbung
-
-- eine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen
-- fördert Wiederverwendbarkeit und Hierarchiebildung
-
-
-## OOP: Polymorphie ("Vielgestaltigkeit")
-
-- Objekte verschiedener Klassen können über eine gemeinsame Schnittstelle angesprochen werden
-- Varianten: Überladen (Overloading) / Überschreiben (Overriding)
-
-
-## OOP: Schnittstellen *(Interfaces)*
-
-- definiert, **welche** Methoden eine Klasse implementieren muss
-- lässt offen, **wie**
-- ermöglichen lose Kopplung und Austauschbarkeit von Komponenten
-
-
-## Kapselung
-
-#### Definition
-
-- interne Daten eines Objekts werden vor direktem Zugriff von außen geschützt werden
-- Zugriff erfolgt ausschließlich über definierte Methoden (Getter/Setter)
-
-#### Zugriffsmodifikatoren {.fragment}
-
-| Modifikator | Sichtbarkeit | UML-Symbol |
-|-------------|-------------|------------|
-| public | Überall sichtbar | + |
-| private | Nur innerhalb der eigenen Klasse | - |
-| protected | Eigene Klasse + Unterklassen | # |
-| package/internal | Innerhalb des Pakets/Moduls | ~ |
-
-
-## Kapselung: UML
+::: {.column .fragment width="40%"}
 
 ```
 +------------------------------+
@@ -170,15 +109,66 @@ Zugriffs-<br>modifikator | Symbol | Bedeutung | Verwendung
 +------------------------------+
 ```
 
-- Durch Kapselung wird sichergestellt, dass der Kontostand nicht direkt auf einen negativen Wert gesetzt werden kann.
-- Nur über die Methoden `einzahlen()` und `abheben()` – die eine Validierung durchführen – kann der Wert verändert werden.
+:::
+
+::: {.column .fragment width="60%"}
+
+- Niemand darf direkt auf den Kontostand (`private`) zugreifen und ihn verändern
+- Veränderung nur über die `public`-Methoden `einzahlen()` und `abheben()`, die eine **Validierung** durchführen
+
+:::
+::::
+:::::
+
+
+## OOP: Vererbung
+
+::::: {style="font-size: 1.8rem"}
+
+- eine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen
+- fördert Wiederverwendbarkeit und Hierarchiebildung
+
+#### Python-Beispiel
+
+:::: {.columns .fragment}
+::: column
+
+```python
+class Haustier:
+    def __init__(self, name):
+        self.name = name
+        self._energie = 100  # Unterstrich: 
+        # Konvention für geschütztes Attribut
+
+    def spielen(self):
+      ...
+```
+:::
+
+::: column
+
+```python
+class Hund(Haustier):
+    pass    # erbt alles unverändert
+```
+:::
+::::
+
+::: fragment
+
+```python
+bello = Hund("Bello")
+bello.spielen()   # nutzt die geerbte Methode
+```
+
+:::
+:::::
 
 
 ## Vererbung: UML
 
-Eine Klasse (Kindklasse / Unterklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse / Oberklasse) übernehmen und erweitern.
-
-#### UML-Darstellung
+:::: columns
+::: {.column style="font-size: 1.8rem"}
 
 ```
 +----------------------------+
@@ -202,8 +192,21 @@ Eine Klasse (Kindklasse / Unterklasse) kann Attribute und Methoden einer anderen
 +----------------+  +--------------------+
 ```
 
+:::
+
+::: {.column .fragment}
+
+- `PKW` und `LKW` erben von `Fahrzeug`
+- Beide übernehmen die `protected`-Attribute `marke` und `baujahr`
+- Beide erhalten jeweils ein eigenes privates Attribut (`anzahlSitze` bzw. `ladekapazität`)
+
+:::
+::::
+
 
 ## Vererbung: Begriffe
+
+::: {style="font-size: 1.8rem"}
 
 - **Oberklasse (Superklasse)** – Klasse, von der geerbt wird
 - **Unterklasse (Subklasse)** – Klasse, die erbt
@@ -214,21 +217,35 @@ Eine Klasse (Kindklasse / Unterklasse) kann Attribute und Methoden einer anderen
 - Durch Vererbung müssen gemeinsame Attribute (marke, baujahr) und Methoden nur einmal in der Elternklasse definiert werden.
 - Kindklassen fügen spezifische Attribute hinzu und können Methoden überschreiben.
 
+:::
 
-## Polymorphie
+
+## OOP: Polymorphie ("Vielgestaltigkeit")
+
+::: {style="font-size: 1.8rem"}
 
 **Definition:** Polymorphie (Vielgestaltigkeit) bedeutet, dass Objekte verschiedener Klassen über eine gemeinsame Schnittstelle angesprochen werden können und sich **unterschiedlich verhalten**.
 
 #### Zwei Arten
 
-| Art | Name | Beschreibung | Beispiel |
-|-----|------|-------------|----------|
-| Überladen | Overloading | Gleicher Methodenname, verschiedene Parameter | `berechne(a)` und `berechne(a, b)` |
-| Überschreiben | Overriding | Kindklasse überschreibt Methode der Elternklasse | `Hund.sprechen()` statt `Tier.sprechen()` |
+| Art | Beschreibung | Beispiel |
+|:---|:---------|:-----|
+| Überladen (*Overloading*) | Gleicher Methodenname, verschiedene Parameter | `berechne(a)` und `berechne(a, b)` |
+| Überschreiben (*Overriding*) | Kindklasse überschreibt Methode der Elternklasse | `Hund.sprechen()` statt `Tier.sprechen()` |
 
+:::
+
+
+## OOP: Schnittstellen *(Interfaces)*
+
+- definieren, **welche** Methoden eine Klasse implementieren muss
+- lassen offen, **wie**
+- ermöglichen lose Kopplung und Austauschbarkeit von Komponenten
 
 
 ## Schnittstellen: UML-Notation
+
+::: {style="font-size: 1.8rem"}
 
 ```
 +-------------------+
@@ -250,6 +267,7 @@ Eine Klasse (Kindklasse / Unterklasse) kann Attribute und Methoden einer anderen
 +-------------------+
 ```
 
+:::
 
 
 ## <!-- -->
