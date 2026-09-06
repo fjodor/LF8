@@ -342,6 +342,26 @@
     ]
   },
   {
+    "objectID": "02_Algorithmen.html#warum-sollen-systemintegratoren-programmieren",
+    "href": "02_Algorithmen.html#warum-sollen-systemintegratoren-programmieren",
+    "title": "Python und Algorithmen",
+    "section": "Warum sollen Systemintegratoren programmieren?",
+    "text": "Warum sollen Systemintegratoren programmieren?\nBeherrschung moderner IT-Infrastrukturen erfordert:\n\n\nAutomatisierung\nSkripting\nAPI-Verständnis\n\n\n\nWer Systeme baut, muss sie auch automatisieren, integrieren und analysieren können.",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#warum-sollen-sis-programmieren",
+    "href": "02_Algorithmen.html#warum-sollen-sis-programmieren",
+    "title": "Python und Algorithmen",
+    "section": "Warum sollen SIs programmieren?",
+    "text": "Warum sollen SIs programmieren?\n\n\nAutomatisierung von Routineaufgaben: Userverwaltung, Backups, Logrotation, Updates, Monitoring; ohne Skripte manuell, fehleranfällig, langsam\nSkripting für Betriebssysteme: PowerShell, Bash, Python sind Standard für Admins\nInfrastructure as Code: Ansible, Terraform, Cloud-Deployments basieren auf deklarativer oder prozeduraler “Programmierung”\nAPI-Verständnis: Moderne Systeme kommunizieren über REST-APIs\nFehleranalyse: Logs parsen, Daten filtern, Zusammenhänge erkennen\nAutomatisiertes Deployment: CI/CD-Pipelines, Container, Cloud-Umgebungen\nKonfigurationsmanagement: Tools wie Puppet, Chef, Ansible nutzen YAML, Python, DSLs\nNetzwerkautomatisierung: Switch-Konfigurationen, Firewall-Regeln, VLAN-Rollouts: heute oft automatisiert statt manuell\nSicherheitsaufgaben: Schwachstellenscans, Log-Korrelation, Incident-Response: Skripte\nCloud-Kompetenz: AWS, Azure, GCP: alles API- und Code-getrieben\nDevOps-Kultur verlangt, dass Admins und Entwickler gemeinsam arbeiten\nPrüfungsrelevanz: AP1 / AP2 enthalten regelmäßig Skript- und Automatisierungsaufgaben",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
     "objectID": "02_Algorithmen.html#python-for-schleifen",
     "href": "02_Algorithmen.html#python-for-schleifen",
     "title": "Python und Algorithmen",
@@ -377,6 +397,26 @@
     "title": "Python und Algorithmen",
     "section": "Bubble Sort: Ablauf",
     "text": "Bubble Sort: Ablauf",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#python-doctests",
+    "href": "02_Algorithmen.html#python-doctests",
+    "title": "Python und Algorithmen",
+    "section": "Python: doctests",
+    "text": "Python: doctests\nDoctests sind eingebettete Tests in Docstrings, die wie interaktive Python‑Beispiele aussehen (&gt;&gt;&gt;).\nZweck:\n\nDokumentation und Test in einem Schritt\nZeigen, wie eine Funktion benutzt wird\nPrüfen automatisch, ob die Beispiele noch stimmen",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#python-doctests-1",
+    "href": "02_Algorithmen.html#python-doctests-1",
+    "title": "Python und Algorithmen",
+    "section": "Python: doctests",
+    "text": "Python: doctests\nBeispiel:\ndef add(a, b):\n    \"\"\"\n    Add two numbers.\n\n    &gt;&gt;&gt; add(2, 3)\n    5\n    \"\"\"\n    return a + b",
     "crumbs": [
       "02 Algorithmen"
     ]
