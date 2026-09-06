@@ -18,6 +18,25 @@ execute:
 callout-appearance: simple
 ---
 
+## OOP: Blick in die Geschichte ...
+
+:::: columns
+::: column
+
+![](libs/_Images/Oslo-Hafen-M%C3%B6we-Thomas-Woodtli-Wikim-C.jpg)
+
+[[Quelle: Thomas Woodtli, Wikimedia Commons, CC-BY-SA-2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.en)]{style="font-size: 1.4rem"}
+
+:::
+
+::: {.column .incremental style="font-size: 1.7rem"}
+- 1960er: **Ole-Johan Dahl** und **Kristen Nygaard** am Norwegian Computing Center in Oslo simulieren Schiffsbewegungen im Osloer Hafen
+- Damalige prozedurale Programiersprachen (Algol, Fortran): verfilzter Code; -> **Simula** (OOP)
+- 1970er: **Alan Kay** wollte interaktives Computersystem bauen -> Simula -> **Smalltalk**
+:::
+::::
+
+
 ## Ziele
 
 Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden können:
