@@ -23,7 +23,6 @@ callout-appearance: simple
 Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden können:
 
 - Kapselung, Vererbung, Polymorphie, Interfaces
-- Fehlerbehandlung
 - UML-Notation
 - Zugriffsmodifikatoren
 - Einführung in Pseudocode mit OOP-Konzepten
@@ -37,25 +36,103 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 - Interfaces
 
 
-## OOP: Grundideen
+## OOP: Kapselung *(Encapsulation)*
 
-### Kapselung *(Encapsulation)*
+::: incremental
 
 - interne Daten eines Objekts werden vor direktem Zugriff geschützt
 - Zugriff erfolgt über definierte Methoden (Getter/Setter)
-- Zugriffsmodifikatoren (public, private, protected) steuern die Sichtbarkeit.
+- Zugriffsmodifikatoren steuern die Sichtbarkeit:  
+  *public, private, protected, package*
 
-### Vererbung
+:::
+
+
+## OOP: Kapselung - Zugriffsmodifikatoren
+
+::::: {style="font-size: 1.8rem"}
+Zugriffsmodifikatoren bestimmen, wo auf Klassen, Methoden und Variablen zugegriffen werden kann.
+
+:::: columns
+::: {.column width="40%"}
+
+Zugriffs-<br>modifikator | Symbol |
+--------------------|----------|
+`public` <br> &nbsp; | + |
+`private` <br> &nbsp; | - |
+`protected` <br> &nbsp; | # |
+`package` | ~ |
+:::
+
+::: {.column .fragment width="60%"}
+
+| Bedeutung <br> &nbsp; |
+|-----------|
+| Zugriff **überall** erlaubt, sowohl innerhalb als auch außerhalb der Klasse
+| Zugriff **nur innerhalb der Klasse** erlaubt, in der sie definiert sind
+| Zugriff nur innerhalb der Klasse, des Pakets und von abgeleiteten Klassen erlaubt
+| Zugriff ist innerhalb der Klasse und in allen Klassen desselben Pakets erlaubt
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 142
+:::
+
+
+## OOP: Kapselung - Zugriffsmodifikatoren
+
+::::: {style="font-size: 1.8rem"}
+
+#### IHK-Standard in Prüfungen
+
+Zugriffs-<br>modifikator | Symbol | Bedeutung | Verwendung
+:-----:|:---:|:-----------:|:---:
+`private` | - | Zugriff **nur innerhalb der Klasse** erlaubt, in der sie definiert sind | Attribute
+`public` | + | Zugriff **überall** erlaubt, sowohl innerhalb als auch außerhalb der Klasse | Operation / Methode
+
+#### UML-Beispiel
+
+:::: columns
+::: {.column .fragment}
+
+```
++------------------------------+
+|          Konto               |
+|------------------------------|
+| - kontostand: double         |
+|------------------------------|
+| + einzahlen(betrag: double)  |
+| + abheben(betrag: double)    |
++------------------------------+
+```
+
+:::
+
+::: {.column .fragment}
+
+- Niemand darf direkt auf den Kontostand zugreifen und ihn verändern
+- Zugriff nur über die Methoden `einzahlen()` und `abheben()`
+
+:::
+::::
+:::::
+
+
+## OOP: Vererbung
 
 - eine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen
 - fördert Wiederverwendbarkeit und Hierarchiebildung
 
-### Polymorphie ("Vielgestaltigkeit")
+
+## OOP: Polymorphie ("Vielgestaltigkeit")
 
 - Objekte verschiedener Klassen können über eine gemeinsame Schnittstelle angesprochen werden
 - Varianten: Überladen (Overloading) / Überschreiben (Overriding)
 
-### Schnittstellen *(Interfaces)*
+
+## OOP: Schnittstellen *(Interfaces)*
 
 - definiert, **welche** Methoden eine Klasse implementieren muss
 - lässt offen, **wie**
@@ -69,7 +146,7 @@ Grundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden 
 - interne Daten eines Objekts werden vor direktem Zugriff von außen geschützt werden
 - Zugriff erfolgt ausschließlich über definierte Methoden (Getter/Setter)
 
-#### Zugriffsmodifikatoren
+#### Zugriffsmodifikatoren {.fragment}
 
 | Modifikator | Sichtbarkeit | UML-Symbol |
 |-------------|-------------|------------|
