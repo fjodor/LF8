@@ -86,6 +86,68 @@ Lernkarten AP2 2025 Nr. 134
 :::
 
 
+## OOP vs. prozedurale Programmierung
+
+:::: {.columns style="font-size: 1.9rem"}
+::: {.column width="40%"}
+
+### OOP
+
+- Daten und Funktionen werden zu Objekten **zusammengefasst**
+- Objekt kann Attribute (Daten) und Methoden (Funktionen) enthalten
+
+:::
+
+::: {.column width="60%"}
+
+### Prozedurale Programmierung
+
+::: fragment
+
+- Programm führt eine Reihe von Aufgaben aus: **Prozeduren**
+- Prozeduren operieren auf **Daten**
+- Daten sind **getrennt** von Prozeduren; Prozeduren **bearbeiten** die Daten
+
+:::
+:::
+::::
+
+::: notes
+Lernkarten AP2 2025 Nr. 136
+:::
+
+
+## Prozedur vs. Funktion
+
+:::: {.columns style="font-size: 1.9rem"}
+::: {.column width="45%"}
+
+### Funktion
+
+- Codeblock, der eine spezifische Aufgabe ausführt
+- **liefert in der Regel einen Wert zurück**
+
+:::
+
+::: {.column width="55%"}
+
+### Prozedur
+
+::: fragment
+
+- Codeblock, der eine spezifische Aufgabe ausführt
+- **liefert in der Regel *keinen* Wert zurück**
+- Prozedur führt Aufgabe aus und kehrt dann zur aufrufenden Stelle im Code zurück
+
+:::
+:::
+::::
+
+::: notes
+Lernkarten AP2 2025 Nr. 135
+:::
+
+
 ## OOP: Kapselung - Zugriffsmodifikatoren
 
 ::::: {style="font-size: 1.8rem"}
@@ -374,7 +436,7 @@ Quelle: Belegsatz zu AP2, Sommer 2026
 |         Haustier           |
 |----------------------------|
 | - name : String            |
-| - energie : int           |
+| - energie : int            |
 |----------------------------|
 | + spielen() : void         |
 | + ausruhen() : void        |
@@ -386,6 +448,7 @@ Quelle: Belegsatz zu AP2, Sommer 2026
 |      Hund      |  |     Katze      |
 |----------------|  |----------------|
 | + spielen()    |  | + spielen()    |
+| + ausruhen()   |  | + ausruhen()   |
 +----------------+  +----------------+
 ```
 
