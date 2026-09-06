@@ -212,7 +212,7 @@ bello.spielen()   # nutzt die geerbte Methode
 - **Unterklasse (Subklasse)** – Klasse, die erbt
 - **super** – Zugriff auf Methoden/Konstruktor der Oberklasse
 - **Ist-ein-Beziehung** – PKW ist ein Fahrzeug (Vererbung)
-- **Hat-ein-Beziehung** – Fahrzeug hat einen Motor (Komposition, keine Vererbung)
+- **Hat-ein-Beziehung** – Fahrzeug hat einen Motor (Komposition, keine Vererbung; wird später vertieft)
 
 - Durch Vererbung müssen gemeinsame Attribute (marke, baujahr) und Methoden nur einmal in der Elternklasse definiert werden.
 - Kindklassen fügen spezifische Attribute hinzu und können Methoden überschreiben.
@@ -288,6 +288,39 @@ bello.spielen()   # nutzt die geerbte Methode
 ::::
 
 ![](libs/_Images/Klassendia-4_Syntax.png)
+
+::: notes
+Quelle: Belegsatz zu AP2, Sommer 2026
+:::
+
+
+## Klassendiagramm: Beispiel
+
+#### Vererbung & Polymorphie: UML
+
+::: {style="font-size: 1.8rem"}
+
+```
++----------------------------+
+|         Haustier           |
+|----------------------------|
+| - name : String            |
+| - energie : int           |
+|----------------------------|
+| + spielen() : void         |
+| + ausruhen() : void        |
++----------------------------+
+         ^            ^
+         |            |
+         |            |
++----------------+  +----------------+
+|      Hund      |  |     Katze      |
+|----------------|  |----------------|
+| + spielen()    |  | + spielen()    |
++----------------+  +----------------+
+```
+
+:::
 
 
 ## <!-- -->
