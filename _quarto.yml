@@ -13,6 +13,8 @@ website:
         text: 01 Willkommen zu LF8 - Themen und Zeitplan
       - href: 02_Algorithmen.qmd
         text: 02 Algorithmen
+      - href: 03_OOP_Klassendiagramm.qmd
+        text: 03 OOP Klassendiagramm
 
 format:
   revealjs:

@@ -8,7 +8,6 @@ format:
     theme: simple
     logo: libs/_Images/logo-AFBB.svg
     css: libs/styles.css
-    embed-resources: false
 execute:
   echo: false
   eval: true
@@ -32,9 +31,37 @@ callout-appearance: simple
 ::: {.column .incremental style="font-size: 1.7rem"}
 - 1960er: **Ole-Johan Dahl** und **Kristen Nygaard** am Norwegian Computing Center in Oslo simulieren Schiffsbewegungen im Osloer Hafen
 - Damalige prozedurale Programiersprachen (Algol, Fortran): verfilzter Code; -> **Simula** (OOP)
-- 1970er: **Alan Kay** wollte interaktives Computersystem bauen -> Simula -> **Smalltalk**
+- 1970er: **Alan Kay** wollte interaktives Computersystem bauen -> Simula -> **Smalltalk** (OOP)
 :::
 ::::
+
+
+## Geschichte: Schiffe
+
+:::: columns
+::: column
+
+![](libs/_Images/Kolumbus-Santa-Maria_Edward-H-Hart_Wikim-C.jpg)
+
+[Santa Maria, Schiff von Kolumbus 1492, Wikimedia Commons, vermutlich von Edward H. Hart, public domain]{style="font-size: 1.2rem"}
+
+:::
+
+::: column
+
+![](libs/_Images/Mayflower_Wikim-C.jpg)
+
+[Mayflower, 1620, Wikimedia Commons, CC0 1.0 public domain]{style="font-size: 1.2rem"}
+
+:::
+::::
+
+
+## Geschichte: Schiffe
+
+![](libs/_Images/RMS_Titanic_3_Wikim-C.webp)
+
+[RMS Titanic 1912, Francis Godolphin Osbourne Stuart gest. 1923, Wikimedia Commons, public domain]{style="font-size: 1.2rem"}
 
 
 ## Ziele
