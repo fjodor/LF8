@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fjodor.github.io/LF8/REST-SOAP.html</loc>
+    <loc>https://fjodor.github.io/LF8/Readme.html</loc>
+    <lastmod>2026-08-31T20:13:11.016Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fjodor.github.io/LF8/05_REST-SOAP.html</loc>
     <lastmod>2026-08-31T17:56:10.746Z</lastmod>
   </url>
   <url>
-    <loc>https://fjodor.github.io/LF8/index.html</loc>
-    <lastmod>2026-08-31T17:56:10.747Z</lastmod>
+    <loc>https://fjodor.github.io/LF8/03_OOP_Klassendiagramm.html</loc>
+    <lastmod>2026-09-06T19:06:02.106Z</lastmod>
   </url>
   <url>
     <loc>https://fjodor.github.io/LF8/01_Willkommen_Struktur.html</loc>
@@ -17,7 +21,11 @@
     <lastmod>2026-09-02T06:16:33.780Z</lastmod>
   </url>
   <url>
-    <loc>https://fjodor.github.io/LF8/Readme.html</loc>
-    <lastmod>2026-08-31T20:13:11.016Z</lastmod>
+    <loc>https://fjodor.github.io/LF8/04_Dateiformate.html</loc>
+    <lastmod>2026-09-02T16:43:31.104Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fjodor.github.io/LF8/index.html</loc>
+    <lastmod>2026-08-31T17:56:10.747Z</lastmod>
   </url>
 </urlset>

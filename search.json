@@ -1,54 +1,284 @@
 [
   {
-    "objectID": "REST-SOAP.html#ziele",
-    "href": "REST-SOAP.html#ziele",
+    "objectID": "05_REST-SOAP.html#ziele",
+    "href": "05_REST-SOAP.html#ziele",
     "title": "REST und SOAP",
     "section": "Ziele",
     "text": "Ziele\n\nGrundprinzipien von REST und SOAP kennen\nUnterschiede erklären und begründen koennen, wann welcher Ansatz geeignet ist\n\nKurz:\n\nREST ist der aktuelle Standard fuer Web-APIs\nSOAP wird in Enterprise-Umgebungen verwendet"
   },
   {
-    "objectID": "REST-SOAP.html#themenkreise",
-    "href": "REST-SOAP.html#themenkreise",
+    "objectID": "05_REST-SOAP.html#themenkreise",
+    "href": "05_REST-SOAP.html#themenkreise",
     "title": "REST und SOAP",
     "section": "Themenkreise",
     "text": "Themenkreise\n\n\n\n\n\n\n\n\nNr.\nThemenkreis\nSchwerpunkt\n\n\n\n\n1\nREST\nRessourcenorientierte Webservices, HTTP-Methoden, Statelessness\n\n\n2\nSOAP\nXML-basierte Webservices, WSDL, Envelope-Struktur"
   },
   {
-    "objectID": "REST-SOAP.html#rest-definition",
-    "href": "REST-SOAP.html#rest-definition",
+    "objectID": "05_REST-SOAP.html#rest-definition",
+    "href": "05_REST-SOAP.html#rest-definition",
     "title": "REST und SOAP",
     "section": "REST: Definition",
     "text": "REST: Definition\n\nREST ist ein Architekturstil für verteilte Systeme, der auf dem HTTP-Protokoll basiert\nRessourcen werden über URLs identifiziert und mit HTTP-Methoden manipuliert."
   },
   {
-    "objectID": "REST-SOAP.html#rest-6-prinzipien",
-    "href": "REST-SOAP.html#rest-6-prinzipien",
+    "objectID": "05_REST-SOAP.html#rest-6-prinzipien",
+    "href": "05_REST-SOAP.html#rest-6-prinzipien",
     "title": "REST und SOAP",
     "section": "REST: 6 Prinzipien",
     "text": "REST: 6 Prinzipien\n\n\n\n\n\n\n\n\nPrinzip\nBedeutung\n\n\n\n\nClient-Server\nKlare Trennung von Client und Server\n\n\nStateless (Zustandslos)\nJede Anfrage enthält alle nötige Information, Server speichert keinen Client-Zustand\n\n\nCacheable\nAntworten können zwischengespeichert werden\n\n\nUniform Interface\nEinheitliche Schnittstelle (URLs, HTTP-Methoden)\n\n\nLayered System\nMehrschichtige Architektur möglich (z.B. Load Balancer dazwischen)\n\n\nCode on Demand (optional)\nServer kann ausführbaren Code an Client senden"
   },
   {
-    "objectID": "REST-SOAP.html#rest-http-methoden",
-    "href": "REST-SOAP.html#rest-http-methoden",
+    "objectID": "05_REST-SOAP.html#rest-http-methoden",
+    "href": "05_REST-SOAP.html#rest-http-methoden",
     "title": "REST und SOAP",
     "section": "REST: HTTP-Methoden",
     "text": "REST: HTTP-Methoden\nCRUD = Create - Read - Update - Delete\n\n\n\n\n\n\n\n\n\n\nHTTP-Methode\nCRUD-Operation\nBeschreibung\nBeispiel\n\n\n\n\nGET\nRead\nRessource abrufen\nGET /api/kunden/42\n\n\nPOST\nCreate\nNeue Ressource erstellen\nPOST /api/kunden\n\n\nPUT\nUpdate\nRessource vollständig ersetzen\nPUT /api/kunden/42\n\n\nPATCH\nUpdate (teilweise)\nRessource teilweise ändern\nPATCH /api/kunden/42\n\n\nDELETE\nDelete\nRessource löschen\nDELETE /api/kunden/42"
   },
   {
-    "objectID": "REST-SOAP.html#vielen-dank",
-    "href": "REST-SOAP.html#vielen-dank",
+    "objectID": "05_REST-SOAP.html#vielen-dank",
+    "href": "05_REST-SOAP.html#vielen-dank",
     "title": "REST und SOAP",
     "section": "Vielen Dank!",
     "text": "Vielen Dank!\n\n\nViel Erfolg!"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "LF8",
-    "section": "",
-    "text": "Willkommen!\nHier sammle ich Unterlagen zu LF8.\nDer Quellcode liegt hier: https://github.com/fjodor/LF8",
+    "objectID": "03_OOP_Klassendiagramm.html#oop-blick-in-die-geschichte",
+    "href": "03_OOP_Klassendiagramm.html#oop-blick-in-die-geschichte",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Blick in die Geschichte …",
+    "text": "OOP: Blick in die Geschichte …\n\n\n\nQuelle: Thomas Woodtli, Wikimedia Commons, CC-BY-SA-2.0\n\n\n1960er: Ole-Johan Dahl und Kristen Nygaard am Norwegian Computing Center in Oslo simulieren Schiffsbewegungen im Osloer Hafen\nDamalige prozedurale Programiersprachen (Algol, Fortran): verfilzter Code; -&gt; Simula (OOP)\n1970er: Alan Kay wollte interaktives Computersystem bauen -&gt; Simula -&gt; Smalltalk (OOP)",
     "crumbs": [
-      "Home"
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#geschichte-schiffe",
+    "href": "03_OOP_Klassendiagramm.html#geschichte-schiffe",
+    "title": "OOP, Klassendiagramm",
+    "section": "Geschichte: Schiffe",
+    "text": "Geschichte: Schiffe\n\n\n\nSanta Maria, Schiff von Kolumbus 1492, Wikimedia Commons, vermutlich von Edward H. Hart, public domain\n\n\nMayflower, 1620, Wikimedia Commons, CC0 1.0 public domain",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#geschichte-schiffe-1",
+    "href": "03_OOP_Klassendiagramm.html#geschichte-schiffe-1",
+    "title": "OOP, Klassendiagramm",
+    "section": "Geschichte: Schiffe",
+    "text": "Geschichte: Schiffe\n\nRMS Titanic 1912, Francis Godolphin Osbourne Stuart gest. 1923, Wikimedia Commons, public domain",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#ziele",
+    "href": "03_OOP_Klassendiagramm.html#ziele",
+    "title": "OOP, Klassendiagramm",
+    "section": "Ziele",
+    "text": "Ziele\nGrundpfeiler der objektorientierten Programmierung (OOP) verstehen und anwenden können:\n\nKapselung, Vererbung, Polymorphie, Interfaces\nUML-Notation\nZugriffsmodifikatoren\nEinführung in Pseudocode mit OOP-Konzepten",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-was-ist-eine-klasse",
+    "href": "03_OOP_Klassendiagramm.html#oop-was-ist-eine-klasse",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Was ist eine Klasse?",
+    "text": "OOP: Was ist eine Klasse?\n\n\nEine Klasse ist ein Bauplan für die Erstellung von Objekten.\nKlasse definiert Attribute und Methoden eines Objekts\n\nAttribute: Eigenschaften, Variablen; repräsentieren den Zustand\nMethoden: Funktionen; repräsentieren das Verhalten\n\nKlasse ermöglicht Erstellung mehrerer Objekte mit ähnlichen Merkmalen und Verhaltensweisen\n\n\n\nLernkarten AP2 2025 Nr. 137",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-was-ist-ein-objekt",
+    "href": "03_OOP_Klassendiagramm.html#oop-was-ist-ein-objekt",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Was ist ein Objekt?",
+    "text": "OOP: Was ist ein Objekt?\n\n\neine konkrete Instanz einer Klasse\nbesitzt die Attribute und Methoden, die in seiner Klasse definiert sind\nJedes Objekt hat seinen eigenen Satz von Werten für die Attribute.\nAttribute -&gt; Zustand des Objekts\nMethoden -&gt; Verhalten des Objekts, das auf diesem Zustand operiert\nEin Objekt ist eine Verkapselung von Daten (Zustand) und den dazu gehörenden Operationen (Verhalten).\n\n\n\nLernkarten AP2 2025 Nr. 140",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-grundideen",
+    "href": "03_OOP_Klassendiagramm.html#oop-grundideen",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Grundideen",
+    "text": "OOP: Grundideen\n\nKapselung (Encapsulation)\nVererbung\nPolymorphie\nInterfaces",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-kapselung-encapsulation",
+    "href": "03_OOP_Klassendiagramm.html#oop-kapselung-encapsulation",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Kapselung (Encapsulation)",
+    "text": "OOP: Kapselung (Encapsulation)\n\n\ninterne Daten eines Objekts werden vor direktem Zugriff geschützt\nZugriff erfolgt über definierte Methoden (Getter/Setter)\nZugriffsmodifikatoren steuern die Sichtbarkeit:\npublic, private, protected, package\nschafft Datenintegrität: Manipulation nur auf sichere, kontrollierte Weise\nverbessert Wartbarkeit: Änderungen an der internen Implementierung der Klasse beeinflussen nicht die Programmteile, die die Klasse verwenden\n\n\n\nLernkarten AP2 2025 Nr. 134",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-vs.-prozedurale-programmierung",
+    "href": "03_OOP_Klassendiagramm.html#oop-vs.-prozedurale-programmierung",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP vs. prozedurale Programmierung",
+    "text": "OOP vs. prozedurale Programmierung\n\n\nOOP\n\nDaten und Funktionen werden zu Objekten zusammengefasst\nObjekt kann Attribute (Daten) und Methoden (Funktionen) enthalten\n\n\nProzedurale Programmierung\n\n\nProgramm führt eine Reihe von Aufgaben aus: Prozeduren\nProzeduren operieren auf Daten\nDaten sind getrennt von Prozeduren; Prozeduren bearbeiten die Daten\n\n\n\n\nLernkarten AP2 2025 Nr. 136",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#prozedur-vs.-funktion",
+    "href": "03_OOP_Klassendiagramm.html#prozedur-vs.-funktion",
+    "title": "OOP, Klassendiagramm",
+    "section": "Prozedur vs. Funktion",
+    "text": "Prozedur vs. Funktion\n\n\nFunktion\n\nCodeblock, der eine spezifische Aufgabe ausführt\nliefert in der Regel einen Wert zurück\n\n\nProzedur\n\n\nCodeblock, der eine spezifische Aufgabe ausführt\nliefert in der Regel keinen Wert zurück\nProzedur führt Aufgabe aus und kehrt dann zur aufrufenden Stelle im Code zurück\n\n\n\n\nLernkarten AP2 2025 Nr. 135",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-kapselung---zugriffsmodifikatoren",
+    "href": "03_OOP_Klassendiagramm.html#oop-kapselung---zugriffsmodifikatoren",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Kapselung - Zugriffsmodifikatoren",
+    "text": "OOP: Kapselung - Zugriffsmodifikatoren\n\nZugriffsmodifikatoren bestimmen, wo auf Klassen, Methoden und Variablen zugegriffen werden kann.\n\n\n\n\n\nZugriffs-modifikator\nSymbol\n\n\n\n\npublic   \n+\n\n\nprivate   \n-\n\n\nprotected   \n#\n\n\npackage\n~\n\n\n\n\n\n\n\n\n\n\nBedeutung   \n\n\n\n\nZugriff überall erlaubt, sowohl innerhalb als auch außerhalb der Klasse\n\n\nZugriff nur innerhalb der Klasse erlaubt, in der sie definiert sind\n\n\nZugriff nur innerhalb der Klasse, des Pakets und von abgeleiteten Klassen erlaubt\n\n\nZugriff ist innerhalb der Klasse und in allen Klassen desselben Pakets erlaubt\n\n\n\n\n\n\nLernkarte AP2 2025 Nr. 142",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-kapselung---zugriffsmodifikatoren-1",
+    "href": "03_OOP_Klassendiagramm.html#oop-kapselung---zugriffsmodifikatoren-1",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Kapselung - Zugriffsmodifikatoren",
+    "text": "OOP: Kapselung - Zugriffsmodifikatoren\n\nIHK-Standard in Prüfungen\n\n\n\n\n\n\n\n\n\nZugriffs-modifikator\nSymbol\nBedeutung\nVerwendung\n\n\n\n\nprivate\n-\nZugriff nur innerhalb der Klasse erlaubt, in der sie definiert sind\nAttribute\n\n\npublic\n+\nZugriff überall erlaubt, sowohl innerhalb als auch außerhalb der Klasse\nOperation / Methode\n\n\n\nUML-Beispiel\n\n\n+------------------------------+\n|          Konto               |\n|------------------------------|\n| - kontostand: double         |\n|------------------------------|\n| + getKontostand(): double    |\n| + einzahlen(betrag: double)  |\n| + abheben(betrag: double)    |\n+------------------------------+\n\n\nNiemand darf direkt auf den Kontostand (private) zugreifen und ihn verändern\nVeränderung nur über die public-Methoden einzahlen() und abheben(), die eine Validierung durchführen",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-vererbung",
+    "href": "03_OOP_Klassendiagramm.html#oop-vererbung",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Vererbung",
+    "text": "OOP: Vererbung\n\n\nSchlüsselprinzip: ermöglicht, neue Klassen aus bereits existierenden Klassen zu erzeugen\neine Klasse (Kindklasse) kann Attribute und Methoden einer anderen Klasse (Elternklasse) übernehmen\nfördert Wiederverwendbarkeit und Hierarchiebildung; vermeidet Redundanz\nKindklasse heißt auch abgeleitete Klasse oder Unterklasse\nElternklasse heißt auch Oberklasse oder Basisklasse\n\n\n\nLernkarten AP2 2025 Nr. 133",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#vererbung-python-beispiel",
+    "href": "03_OOP_Klassendiagramm.html#vererbung-python-beispiel",
+    "title": "OOP, Klassendiagramm",
+    "section": "Vererbung: Python-Beispiel",
+    "text": "Vererbung: Python-Beispiel\n\n# Elternklasse = Basisklasse = Oberklasse\n\nclass Haustier:\n    def __init__(self, name):\n        self.name = name\n        self._energie = 100  # Unterstrich: \n        # Konvention für geschütztes Attribut\n\n    def spielen(self):\n      ...\n# Kindklasse = abgeleitete Klasse = Unterklasse\n\nclass Hund(Haustier):\n    pass    # erbt alles unverändert\n\n# Anwendung\n\nbello = Hund(\"Bello\")\nbello.spielen()   # nutzt die geerbte Methode",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#vererbung-uml",
+    "href": "03_OOP_Klassendiagramm.html#vererbung-uml",
+    "title": "OOP, Klassendiagramm",
+    "section": "Vererbung: UML",
+    "text": "Vererbung: UML\n\n\n+----------------------------+\n|       Fahrzeug             |\n|----------------------------|\n| # marke: String            |\n| # baujahr: int             |\n|----------------------------|\n| + beschreibung(): String   |\n+----------------------------+\n         ^            ^\n         |            |\n    erbt von      erbt von\n         |            |\n+----------------+  +--------------------+\n|     PKW        |  |       LKW          |\n|----------------|  |--------------------|\n| - anzahlSitze  |  | - ladekapazitaet   |\n|----------------|  |--------------------|\n| + beschreibung |  | + beschreibung()   |\n+----------------+  +--------------------+\n\n\nPKW und LKW erben von Fahrzeug\nBeide übernehmen die protected-Attribute marke und baujahr\nBeide erhalten jeweils ein eigenes privates Attribut (anzahlSitze bzw. ladekapazität)",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#vererbung-begriffe",
+    "href": "03_OOP_Klassendiagramm.html#vererbung-begriffe",
+    "title": "OOP, Klassendiagramm",
+    "section": "Vererbung: Begriffe",
+    "text": "Vererbung: Begriffe\n\n\nOberklasse (Superklasse) – Klasse, von der geerbt wird\nUnterklasse (Subklasse) – Klasse, die erbt\nsuper – Zugriff auf Methoden/Konstruktor der Oberklasse\nIst-ein-Beziehung – PKW ist ein Fahrzeug (Vererbung)\nHat-ein-Beziehung – Fahrzeug hat einen Motor (Komposition, keine Vererbung; wird später vertieft)\nDurch Vererbung müssen gemeinsame Attribute (marke, baujahr) und Methoden nur einmal in der Elternklasse definiert werden.\nKindklassen fügen spezifische Attribute hinzu und können Methoden überschreiben.",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-polymorphie-vielgestaltigkeit",
+    "href": "03_OOP_Klassendiagramm.html#oop-polymorphie-vielgestaltigkeit",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Polymorphie (“Vielgestaltigkeit”)",
+    "text": "OOP: Polymorphie (“Vielgestaltigkeit”)\n\nDefinition: Polymorphie (Vielgestaltigkeit) bedeutet, dass Objekte verschiedener Klassen über eine gemeinsame Schnittstelle angesprochen werden können und sich unterschiedlich verhalten.\n\nWie wird das unterschiedliche Verhalten der Objekte ausgelöst?\ndurch den Datentyp oder die Klasse\nKlassen teilen Methoden, aber die Implementierungen der Methoden können variieren\nWann wird entschieden, welche Implementierung ausgeführt wird? Zur Laufzeit! Tatsächlicher Objekttyp entscheidet\nverbessert Flexibilität\nerhöht Wiederverwendbarkeit von Code\nerleichtert standardisierte Schnittstellen\n\n\n\nLernkarten AP2 2025 Nr. 141",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#polymorphie-zwei-arten",
+    "href": "03_OOP_Klassendiagramm.html#polymorphie-zwei-arten",
+    "title": "OOP, Klassendiagramm",
+    "section": "Polymorphie: Zwei Arten",
+    "text": "Polymorphie: Zwei Arten\n\n\n\n\n\n\n\n\n\n\nArt\nBeschreibung\nBeispiel\n\n\n\n\nÜberladen (Overloading)\nGleicher Methodenname, verschiedene Parameter\nberechne(a) und berechne(a, b)\n\n\nÜberschreiben (Overriding)\nKindklasse überschreibt Methode der Elternklasse\nHund.sprechen() statt Tier.sprechen()",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#oop-schnittstellen-interfaces",
+    "href": "03_OOP_Klassendiagramm.html#oop-schnittstellen-interfaces",
+    "title": "OOP, Klassendiagramm",
+    "section": "OOP: Schnittstellen (Interfaces)",
+    "text": "OOP: Schnittstellen (Interfaces)\n\ndefinieren, welche Methoden eine Klasse implementieren muss\nlassen offen, wie\nermöglichen lose Kopplung und Austauschbarkeit von Komponenten",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#schnittstellen-uml-notation",
+    "href": "03_OOP_Klassendiagramm.html#schnittstellen-uml-notation",
+    "title": "OOP, Klassendiagramm",
+    "section": "Schnittstellen: UML-Notation",
+    "text": "Schnittstellen: UML-Notation\n\n+-------------------+\n| &lt;&lt;interface&gt;&gt;     |\n| Druckbar          |\n|-------------------|\n|                   |\n|-------------------|\n| + drucke(): void  |\n+-------------------+\n        ^\n        |\n  implementiert\n        |       \n+-------------------+\n| Rechnung          |\n|-------------------|\n| + drucke(): void  |\n+-------------------+",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#klassendiagramm",
+    "href": "03_OOP_Klassendiagramm.html#klassendiagramm",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm",
+    "text": "Klassendiagramm\n\n\n \n\n\n\n\n\nQuelle: Belegsatz zu AP2, Sommer 2026",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#klassendiagramm-beispiel",
+    "href": "03_OOP_Klassendiagramm.html#klassendiagramm-beispiel",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm: Beispiel",
+    "text": "Klassendiagramm: Beispiel\nVererbung & Polymorphie: UML\n\n+----------------------------+\n|         Haustier           |\n|----------------------------|\n| - name : String            |\n| - energie : int            |\n|----------------------------|\n| + spielen() : void         |\n| + ausruhen() : void        |\n+----------------------------+\n         ^            ^\n         |            |\n         |            |\n+----------------+  +----------------+\n|      Hund      |  |     Katze      |\n|----------------|  |----------------|\n| + spielen()    |  | + spielen()    |\n| + ausruhen()   |  | + ausruhen()   |\n+----------------+  +----------------+",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#klassendiagramm-erläuterung",
+    "href": "03_OOP_Klassendiagramm.html#klassendiagramm-erläuterung",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm: Erläuterung",
+    "text": "Klassendiagramm: Erläuterung\n\nDas Klassendiagramm zeigt Klassen, ihre Attribute und Methoden sowie Beziehungen zwischen Klassen.\n\nKlassen und Objekte: Welche Klassen gibt es und welche Objekte repräsentieren sie?\nAttribute und Operationen: Welche Eigenschaften und Verhaltensweisen haben die Klassen?\nBeziehungen: Wie sind die Klassen miteinander verknüpft (z. B. durch Assoziationen und Vererbungen)?\nSichtbarkeit: Welche Attribute und Operationen sind öffentlich, privat oder geschützt?\nKardinalität: Wie viele Instanzen einer Klasse können mit einer anderen in Beziehung stehen?\n\n\n\nLernkarten AP2 2025 Nr. 131",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#section",
+    "href": "03_OOP_Klassendiagramm.html#section",
+    "title": "OOP, Klassendiagramm",
+    "section": "",
+    "text": "Viel Erfolg!",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
     ]
   },
   {
@@ -249,6 +479,30 @@
     "text": "Viel Erfolg mit allen Algorithmen!",
     "crumbs": [
       "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "04_Dateiformate.html#ziele",
+    "href": "04_Dateiformate.html#ziele",
+    "title": "Dateiformate",
+    "section": "Ziele",
+    "text": "Ziele"
+  },
+  {
+    "objectID": "04_Dateiformate.html#section",
+    "href": "04_Dateiformate.html#section",
+    "title": "Dateiformate",
+    "section": "",
+    "text": "Viel Erfolg!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LF8",
+    "section": "",
+    "text": "Willkommen!\nHier sammle ich Unterlagen zu LF8.\nDer Quellcode liegt hier: https://github.com/fjodor/LF8",
+    "crumbs": [
+      "Home"
     ]
   }
 ]
