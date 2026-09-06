@@ -270,6 +270,26 @@ bello.spielen()   # nutzt die geerbte Methode
 :::
 
 
+## Klassendiagramm
+
+:::: columns
+::: column
+
+![](libs/_Images/Klassendia-1_Klasse.png)
+![](libs/_Images/Klassendia-2_Klasse-Attribute-Methoden.png)
+
+:::
+
+::: column
+
+![](libs/_Images/Klassendia-3_Interface.png)
+
+:::
+::::
+
+![](libs/_Images/Klassendia-4_Syntax.png)
+
+
 ## <!-- -->
 
 ![](libs/_Images/coffee.jpg){fig-align="center" width="50%"}
