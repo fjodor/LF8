@@ -44,8 +44,8 @@ callout-appearance: simple
 ## Zeitplan und Noten
 
 - LF8 über das Schuljahr verteilt, parallel zu LF7
-- **Klassenarbeit** voraussichtlich im zweiten Block, am 3. November:  
-  Algorithmen, Grundlagen der OOP
+- **Klassenarbeit** am 3. November: Algorithmen, Grundlagen der OOP
+- **Klassenarbeit** am 29. Januar: Datenbank-Grundlagen, Entity-Relationship-Modell (ER-Modell)
 - **Praxisteil** von LF8 bei Herrn Lötzsch
 
 
@@ -54,17 +54,18 @@ callout-appearance: simple
 ca. 10 Minuten; Teamarbeit zu zweit möglich: dann tragen beide je einen Teil vor
 
 - Montag, 07. September:  
-  **Einführung in OOP**: Was sind Klassen, was sind Objekte im Sinne der OOP?
+  **Einführung in OOP**: Was sind Klassen, was sind Objekte im Sinne der OOP?  
+  *Justin, Sven*
 - Montag, 02. November: 
-  + **Das Dateiformat csv**: Aufbau, Lesbarkeit; Was sind csv Injections?
-  + **Das Dateiformat XML**: Aufbau, Lesbarkeit, Einsatz-Beispiele
-  + **Das Dateiformat JSON**: Aufbau, Lesbarkeit, Einsatz-Beispiele
+  + **Das Dateiformat csv**: Aufbau, Lesbarkeit; Was sind csv Injections? *Fridolin*
+  + **Das Dateiformat XML**: Aufbau, Lesbarkeit, Einsatz-Beispiele: *Noah*
+  + **Das Dateiformat JSON**: Aufbau, Lesbarkeit, Einsatz-Beispiele: *Jason*
 - Dienstag, 10. November:  
-  **Einführung in REST-APIs**: Nutzen, Aufbau, Einsatz-Beispiele
+  **Einführung in REST-APIs**: Nutzen, Aufbau, Einsatz-Beispiele: *Oli, Rudi*
 - Montag, 14. Dezember:
-  + **Einführung in NoSQL-Datenbanken**: Grundideen, Einsatz-Beispiele
+  + **Einführung in NoSQL-Datenbanken**: Grundideen, Einsatz-Beispiele: *Fabius, Tobi*
   + **Relationale Datenbanken: Datenbank-Anomalien**  
-    Welche Anomalien gibt es? Wie entstehen sie?
+    Welche Anomalien gibt es? Wie entstehen sie? *Irka, Léon*
 
 
 ## Zusatzaufgaben für Fortgeschrittene {style="font-size: 2rem"}
