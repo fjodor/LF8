@@ -1,1 +1,1 @@
-Sitemap: https://fjodor.github.io/LF8/sitemap.xml
+Sitemap: https://fjodor.github.io/lf8/sitemap.xml

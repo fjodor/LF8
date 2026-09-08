@@ -306,7 +306,7 @@
     "href": "01_Willkommen_Struktur.html#zeitplan-und-noten",
     "title": "Willkommen in LF8!",
     "section": "Zeitplan und Noten",
-    "text": "Zeitplan und Noten\n\nLF8 über das Schuljahr verteilt, parallel zu LF7\nKlassenarbeit voraussichtlich im zweiten Block, am 3. November:\nAlgorithmen, Grundlagen der OOP\nPraxisteil von LF8 bei Herrn Lötzsch",
+    "text": "Zeitplan und Noten\n\nLF8 über das Schuljahr verteilt, parallel zu LF7\nKlassenarbeit am 3. November: Algorithmen, Grundlagen der OOP\nKlassenarbeit am 29. Januar: Datenbank-Grundlagen, Entity-Relationship-Modell (ER-Modell)\nPraxisteil von LF8 bei Herrn Lötzsch",
     "crumbs": [
       "01 Willkommen zu LF8 - Themen und Zeitplan"
     ]
@@ -316,7 +316,7 @@
     "href": "01_Willkommen_Struktur.html#sus-vorträge",
     "title": "Willkommen in LF8!",
     "section": "SuS Vorträge",
-    "text": "SuS Vorträge\nca. 10 Minuten; Teamarbeit zu zweit möglich: dann tragen beide je einen Teil vor\n\nMontag, 07. September:\nEinführung in OOP: Was sind Klassen, was sind Objekte im Sinne der OOP?\nMontag, 02. November:\n\nDas Dateiformat csv: Aufbau, Lesbarkeit; Was sind csv Injections?\nDas Dateiformat XML: Aufbau, Lesbarkeit, Einsatz-Beispiele\nDas Dateiformat JSON: Aufbau, Lesbarkeit, Einsatz-Beispiele\n\nDienstag, 10. November:\nEinführung in REST-APIs: Nutzen, Aufbau, Einsatz-Beispiele\nMontag, 14. Dezember:\n\nEinführung in NoSQL-Datenbanken: Grundideen, Einsatz-Beispiele\nRelationale Datenbanken: Datenbank-Anomalien\nWelche Anomalien gibt es? Wie entstehen sie?",
+    "text": "SuS Vorträge\nca. 10 Minuten; Teamarbeit zu zweit möglich: dann tragen beide je einen Teil vor\n\nMontag, 07. September:\nEinführung in OOP: Was sind Klassen, was sind Objekte im Sinne der OOP?\nJustin, Sven\nMontag, 02. November:\n\nDas Dateiformat csv: Aufbau, Lesbarkeit; Was sind csv Injections? Fridolin\nDas Dateiformat XML: Aufbau, Lesbarkeit, Einsatz-Beispiele: Noah\nDas Dateiformat JSON: Aufbau, Lesbarkeit, Einsatz-Beispiele: Jason\n\nDienstag, 10. November:\nEinführung in REST-APIs: Nutzen, Aufbau, Einsatz-Beispiele: Oli, Rudi\nMontag, 14. Dezember:\n\nEinführung in NoSQL-Datenbanken: Grundideen, Einsatz-Beispiele: Fabius, Tobi\nRelationale Datenbanken: Datenbank-Anomalien\nWelche Anomalien gibt es? Wie entstehen sie? Irka, Léon",
     "crumbs": [
       "01 Willkommen zu LF8 - Themen und Zeitplan"
     ]
