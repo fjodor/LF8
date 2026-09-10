@@ -262,6 +262,36 @@
     ]
   },
   {
+    "objectID": "03_OOP_Klassendiagramm.html#klassendiagramm-beziehungen",
+    "href": "03_OOP_Klassendiagramm.html#klassendiagramm-beziehungen",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm: Beziehungen",
+    "text": "Klassendiagramm: Beziehungen\n\n\n\n\n\nVererbung: Pfeil zeigt auf Oberklasse\nAssoziation: Beziehung zwischen Klassen; kann gerichtet oder ungerichtet sein\n\nBeispiele ungerichtet: Lehrer - Schüler; Produkt - Kategorie\nBeispiele gerichtet: Email -&gt; Empfänger; Rechnung -&gt; Kunde\n\nAggregation und Komposition: Beziehung Teil - Ganzes\n\nAggregation: Teil kann ohne das Ganze existieren, z. B. Schüler (Teil) - Unterricht\nKomposition: Teile existenziell vom Ganzen abhängig, z. B. Raum - Haus",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#klassendiagramm-kardinalitäten",
+    "href": "03_OOP_Klassendiagramm.html#klassendiagramm-kardinalitäten",
+    "title": "OOP, Klassendiagramm",
+    "section": "Klassendiagramm: Kardinalitäten",
+    "text": "Klassendiagramm: Kardinalitäten\n\nDefinition Kardinalitäten = Multiplizitäten: Wie viele Instanzen einer Klasse können mit einer Instanz einer anderen Klasse in Beziehung stehen?\n\n\n\n\n\n\n\n\nSchreibweise\nBedeutung\nErklärung\n\n\n\n\n0..* oder *\nNull bis beliebig viele\nDie Beziehung ist optional. Es können keine oder unendlich viele Objekte verknüpft sein.\n\n\n1..*\nEins bis beliebig viele\nMindestens ein Objekt muss existieren (Pflichtbeziehung).\n\n\n0..1\nNull oder eins\nOptional, aber maximal ein Objekt (z. B. ein Profil für einen Nutzer).\n\n\n1 oder 1..1\nGenau eins\nExakt ein Objekt muss verknüpft sein\n\n\nn..m, z. B. 2..5\nBestimmte Spanne\nMindestens n und maximal m Objekte",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#komposition-aggregation",
+    "href": "03_OOP_Klassendiagramm.html#komposition-aggregation",
+    "title": "OOP, Klassendiagramm",
+    "section": "Komposition, Aggregation",
+    "text": "Komposition, Aggregation\n\n\n\nQuelle: Kakashi-Madara, Wikimedia Commons\n\n\nRaum kann nicht ohne Gebäude existieren: starke Beziehung, Komposition\nStudent kann ohne Vorlesung existieren: lose Beziehung, Aggregation\nKardinalitäten beachten",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
     "objectID": "03_OOP_Klassendiagramm.html#klassendiagramm-erläuterung",
     "href": "03_OOP_Klassendiagramm.html#klassendiagramm-erläuterung",
     "title": "OOP, Klassendiagramm",
