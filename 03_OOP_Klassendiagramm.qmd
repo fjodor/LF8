@@ -501,6 +501,64 @@ Quelle: Belegsatz zu AP2, Sommer 2026
 :::
 
 
+## Klassendiagramm: Beziehungen
+
+:::: columns
+::: column
+
+![](libs/_Images/Klassendia-5_Beziehungen.png)
+
+:::
+
+::: {.column style="font-size: 1.7rem"}
+
+- Vererbung: Pfeil zeigt auf Oberklasse
+- Assoziation: Beziehung zwischen Klassen; kann gerichtet oder ungerichtet sein
+  + Beispiele ungerichtet: Lehrer - Schüler; Produkt - Kategorie
+  + Beispiele gerichtet: Email -> Empfänger; Rechnung -> Kunde
+- Aggregation und Komposition: Beziehung Teil - Ganzes
+  + Aggregation: Teil kann ohne das Ganze existieren, z. B. Schüler (Teil) - Unterricht
+  + Komposition: Teile existenziell vom Ganzen abhängig, z. B. Raum - Haus
+:::
+::::
+
+
+## Klassendiagramm: Kardinalitäten
+
+::: {style="font-size: 1.8rem"}
+
+**Definition Kardinalitäten = Multiplizitäten:** Wie viele Instanzen einer Klasse können mit einer Instanz einer anderen Klasse in Beziehung stehen?
+
+Schreibweise | Bedeutung | Erklärung
+:----|:----|:-----------
+`0..*` oder `*` | Null bis beliebig viele | Die Beziehung ist optional. Es können keine oder unendlich viele Objekte verknüpft sein.
+`1..*` | Eins bis beliebig viele | Mindestens ein Objekt muss existieren (Pflichtbeziehung).
+`0..1` | Null oder eins | Optional, aber maximal ein Objekt (z. B. ein Profil für einen Nutzer).
+`1` oder `1..1` | Genau eins | Exakt ein Objekt muss verknüpft sein
+`n..m`, z. B. `2..5` | Bestimmte Spanne | Mindestens n und maximal m Objekte 
+
+:::
+
+
+## Komposition, Aggregation
+
+:::: columns
+::: column
+
+![](libs/_Images/Komposition_Aggregation.webp)
+
+[Quelle: Kakashi-Madara, Wikimedia Commons]{style="font-size: 1.2rem"}
+
+:::
+
+::: {.column .fragment style="font-size: 1.9rem"}
+- Raum kann nicht ohne Gebäude existieren: starke Beziehung, **Komposition**
+- Student kann ohne Vorlesung existieren: lose Beziehung, **Aggregation**
+- *Kardinalitäten beachten*
+:::
+::::
+
+
 ## Klassendiagramm: Erläuterung
 
 :::: {style="font-size: 1.8rem"}
