@@ -44,7 +44,7 @@ callout-appearance: simple
 ## Zeitplan und Noten
 
 - LF8 über das Schuljahr verteilt, parallel zu LF7
-- **Klassenarbeit** am 3. November: Algorithmen, Grundlagen der OOP
+- **Klassenarbeit** ~~am 3. November~~ verschoben auf 10. November: Algorithmen, Grundlagen der OOP, CSV, XML, JSON
 - **Klassenarbeit** am 29. Januar: Datenbank-Grundlagen, Entity-Relationship-Modell (ER-Modell)
 - **Praxisteil** von LF8 bei Herrn Lötzsch
 
@@ -60,7 +60,7 @@ ca. 10 Minuten; Teamarbeit zu zweit möglich: dann tragen beide je einen Teil vo
   + **Das Dateiformat csv**: Aufbau, Lesbarkeit; Was sind csv Injections? *Fridolin*
   + **Das Dateiformat XML**: Aufbau, Lesbarkeit, Einsatz-Beispiele: *Noah*
   + **Das Dateiformat JSON**: Aufbau, Lesbarkeit, Einsatz-Beispiele: *Jason*
-- Dienstag, 10. November:  
+- Dienstag, 10. November (nach Klassenarbeit):  
   **Einführung in REST-APIs**: Nutzen, Aufbau, Einsatz-Beispiele: *Oli, Rudi*
 - Montag, 14. Dezember:
   + **Einführung in NoSQL-Datenbanken**: Grundideen, Einsatz-Beispiele: *Fabius, Tobi*
