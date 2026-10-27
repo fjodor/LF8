@@ -407,8 +407,8 @@ Lernkarten AP2 2025 Nr. 141
 
 | Art | Beschreibung | Beispiel |
 |:---|:---------|:-----|
-| Überladen (*Overloading*) | Gleicher Methodenname, verschiedene Parameter | `berechne(a)` und `berechne(a, b)` |
-| Überschreiben (*Overriding*) | Kindklasse überschreibt Methode der Elternklasse | `Hund.sprechen()` statt `Tier.sprechen()` |
+| **Überladen** *(Overloading)* | Gleicher Methodenname, verschiedene Parameter <br> **statische Polymorphie** | `berechne(a)` und `berechne(a, b)` |
+| **Überschreiben** *(Overriding)* | Kindklasse überschreibt Methode der Elternklasse <br> **dynamische Polymorphie** | `Hund.sprechen()` statt `Tier.sprechen()` |
 
 :::
 
