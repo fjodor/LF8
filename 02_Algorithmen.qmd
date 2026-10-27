@@ -106,6 +106,23 @@ range(0, 10, 2)
 ::::
 
 
+## Python Tutorial
+
+<br>
+
+:::: {style="font-size: 2.1rem"}
+
+Python Tutorial von J. Lötzsch:  
+<https://johannesloetzsch.github.io/python-tutorial/index.html>
+
+<br>
+
+Online Python:  
+<https://www.online-python.com/>
+
+
+::::
+
 ## Sortieralgorithmen: Bubble Sort {style="font-size: 2.2rem"}
 
 ::: incremental
@@ -118,6 +135,15 @@ range(0, 10, 2)
 - Laufzeit: O(n²)
 
 :::
+
+
+## Was bedeutet O(n²)?
+
+- Aussprache: „O von n Quadrat“
+- O steht für „Order of“ → beschreibt die Größenordnung des Wachstums
+- n ist die Eingabegröße (z. B. Anzahl der Listenelemente)
+- Quadratisches Wachstum: **Verdoppelt** man n, **vervierfacht** sich die Laufzeit
+- Typisch bei Algorithmen mit verschachtelten Schleifen
 
 
 ## Bubble Sort: Ablauf
@@ -135,6 +161,8 @@ Zweck:
 - Zeigen, wie eine Funktion benutzt wird
 - Prüfen automatisch, ob die Beispiele noch stimmen
 
+Dokumentation: <https://docs.python.org/3/library/doctest.html>
+
 
 ## Python: doctests
 
@@ -150,15 +178,6 @@ def add(a, b):
     """
     return a + b
 ```
-
-
-## Was bedeutet O(n²)?
-
-- Aussprache: „O von n Quadrat“
-- O steht für „Order of“ → beschreibt die Größenordnung des Wachstums
-- n ist die Eingabegröße (z. B. Anzahl der Listenelemente)
-- Quadratisches Wachstum: **Verdoppelt** man n, **vervierfacht** sich die Laufzeit
-- Typisch bei Algorithmen mit verschachtelten Schleifen
 
 
 ## Sortieralgorithmen: Selection Sort
