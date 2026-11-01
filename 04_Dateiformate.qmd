@@ -214,6 +214,69 @@ Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-f
 :::
 
 
+## JSON: Einfaches Beispiel
+
+```text
+{
+  "vorname": "Max",
+  "nachname": "Mustermann",
+  "alter": 30,
+  "aktiv": true,
+  "stadt": "Berlin"
+}
+```
+
+
+## JSON: Verschachtelung
+
+```text
+{
+  "mitarbeiterId": "E123",
+  "name": "Anna Schmidt",
+  "position": "Softwareentwicklerin",
+  "adresse": {
+    "strasse": "Hauptstraße 42",
+    "plz": "10115",
+    "stadt": "Berlin"
+  },
+  "kontakt": {
+    "email": "anna.schmidt@example.com",
+    "telefon": "+49 30 123456"
+  }
+}
+```
+
+
+## JSON mit Arrays
+
+:::: {style="font-size: 2rem"}
+
+```text
+{
+  "name": "Maria",
+  "hobbys": [
+    "lesen",
+    "fotografieren",
+    "wandern"
+  ],
+  "bestellungen": [
+    {
+      "bestellungsId": 101,
+      "betrag": 45.99,
+      "bezahlt": true
+    },
+    {
+      "bestellungsId": 102,
+      "betrag": 12.50,
+      "bezahlt": false
+    }
+  ]
+}
+```
+
+::::
+
+
 ## JSON vs. JavaScript-Objekt
 
 :::: {.incremental style="font-size: 1.9rem"}
