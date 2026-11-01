@@ -20,7 +20,524 @@ callout-appearance: simple
 
 ## Ziele
 
+- CSV, JSON, XML
+  + Dateiformate erkennen und unterscheiden
+  + Anwendungsbereiche kennen
+  + Gültige und fehlerhafte Notationen erkennen
 
+
+## CSV: Grundlagen
+
+:::: {.incremental style="font-size: 2rem"}
+
+- **CSV = Comma-Separated Values**
+- Textbasiertes Format zur Speicherung tabellarischer Daten
+- Jede Zeile entspricht einem Datensatz
+- Werte innerhalb einer Zeile werden durch ein Trennzeichen (Separator) getrennt
+- Von fast allen Datenbank-, Tabellenkalkulations- und Statistikprogrammen unterstützt
+
+
+::: fragment
+
+### Beispiel
+
+```text
+ID,Name,Ort
+1,Müller,Dresden
+2,Schmidt,Leipzig
+3,Meier,Chemnitz
+```
+
+:::
+::::
+
+
+## csv: Separatoren
+
+<br>
+
+::::: {.incremental style="font-size: 2rem"}
+
+:::: {.columns}
+::: column
+
+### Deutschland / Europa häufig:
+
+```text
+ID;Name;Ort
+1;Müller;Dresden
+```
+
+:::
+
+::: column
+
+### International häufig:
+
+```text
+ID,Name,Ort
+1,Müller,Dresden
+```
+
+:::
+::::
+
+<br>
+
+### Warum unterschiedliche Separatoren?
+
+- Deutschsprachige Excel-Versionen verwenden oft das Semikolon (;)
+- In vielen Ländern ist das Komma (,) Dezimaltrennzeichen
+- Das eigentliche Trennzeichen muss beim Import bekannt sein
+
+:::::
+
+
+## csv: Zeichencodierung
+
+:::: {.incremental style="font-size: 2rem"}
+
+- **UTF-8**
+  + heute Standard
+  + enthält fast alle Schriftzeichen der Welt
+  + hohe Kompatibilität
+- Veraltete Codierungsstandards: **ISO-8859-1; Windows-1252**
+- Codierung wie "Legende": Welcher Buchstabe gehört zu welchem Zahlenwert?
+- Falsche Codierung führt zu Problemen:  
+  `Müller  →  MÃ¼ller`
+
+::::
+
+
+## csv: Einsatzbereiche
+
+:::: {.incremental style="font-size: 2rem"}
+
+- Datenimport -und -export
+- Datenaustausch zwischen Anwendungen
+- Bereitstellung offener Daten *(Open Data)*
+
+### Nachteile
+
+- Hoher Speicherbedarf im Vergleich zu anderen Dateiformaten zur Datenverarbeitung (z. B. in Python oder R)
+- **Zeilenbasiert**: Beim Laden großer Datenmengen kann man **nicht nur bestimmte Spalten auswählen**
+
+::::
+
+
+## csv Injection
+
+<br>
+
+:::: {.incremental style="font-size: 2.1rem"}
+
+::: {.callout-warning .fragment style="font-size: 2.5rem"}
+**Problem:** Tabellenkalkulationsprogramme können CSV-Inhalte als Formeln interpretieren.
+:::
+
+<br>
+
+**Beispiele:** Ein Angreifer trägt folgenden Wert ein:  
+
+- `=HYPERLINK("http://angreifer.de")`
+- `=cmd|' /C calc'!A0` ("führe folgenden Befehl aus, beende dann Eingabeaufforderung; starte Windows-Taschenrechner")
+
+::::
+
+
+## csv Injection: Schutz
+
+:::: {.columns .incremental style="font-size: 2rem"}
+::: {.column width="35%"}
+
+### Gefährliche Präfixe
+
+- **`=`**
+- **`+`**
+- **`-`**
+- **`@`**
+
+:::
+
+::: {.column width="65%"}
+
+### Schutzmaßnahmen
+
+- Potenziell gefährliche Werte maskieren
+- Führendes Apostroph ergänzen: `'=SUM(A1:A10)`
+- CSV-Dateien aus unbekannten Quellen mit Vorsichert öffnen
+- Importfunktionen nutzen statt Direktöffnen
+
+:::
+::::
+
+
+## JSON: Datentypen
+
+:::: {style="font-size: 2.1rem"}
+
+6 Datentypen in JSON:
+
+Datentyp | Beispiel
+---------|----------
+String | `"Hallo Welt"`
+Number | `42` oder `3.14`
+Boolean | `true` oder `false`
+Null | `null`
+Object | `{"key": "value" }`
+Array | `[1, 2, 3]`
+
+Details siehe [RFC 8259](https://www.rfc-editor.org/info/rfc8259/)
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON: Anwendung
+
+:::: {.incremental style="font-size: 2.1rem"}
+
+- **REST-APIs:** Standardformat für Datenaustausch im Web
+- **Konfigurationsdateien:** `package.json, tsconfig.json`
+- **NoSQL-Datenbanken:** MongoDB, CouchDB speichern JSON
+- **Logs:** Strukturierte Log-Ausgabe
+- **Frontend-Backend-Kommunikation:** Fetch, AJAX, WebSockets
+- **JWT Tokens:** Payload ist Base64-codiertes JSON
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON vs. JavaScript-Objekt
+
+:::: {.incremental style="font-size: 1.9rem"}
+
+Kriterium | JSON | JavaScript-Objekt (JS)
+----------|------|-----------------------
+Keys: doppelte Anführungszeichen | erforderlich | nicht erforderlich
+Trailing Comma | verboten | erlaubt
+Kommentare | verboten | erlaubt
+Werte | nur 6 Typen | auch `undefined`, `NaN`, Funktionen
+Prototyp | keiner | Eigenschaften und Methoden können von Prototyp geerbt werden
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON: Häufige Fehler
+
+:::: {style="font-size: 2.1rem"}
+
+Fehler | Beispiel
+-------|----------
+Trailing Comma | `{"a":1,}`
+Single Quotes | `{'a':'b'}`
+Unquoted Keys | `{a:1}`
+Kommentare | `// comment`
+Undefined | `undefined`
+NaN / Infinity | `NaN`
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON: Verschachtelung
+
+:::: {.incremental style="font-size: 2.1rem"}
+
+JSON kann beliebig verschachtelt werden:
+
+Verschachtelungs-Typ | Beispiel
+---------------------|------------
+Objekte in Objekten | `{"user": {"name": "Max"}}`
+Arrays in Objekten | `{"tags": ["a", "b"]}`
+Arrays von Objekten | `[{"id": 1}, {"id": 2}]`
+Beliebig tief | theoretisch unbegrenzt
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## JSON: Best Practices
+
+:::: {.incremental style="font-size: 2rem"}
+
+So schreibst Du gutes JSON:
+
+- **Doppelte Anführungszeichen** für Strings und Keys
+- **2 oder 4 Spaces** für Einrückung
+- **Keine Kommentare** (nicht erlaubt in JSON)
+- **UTF-8** als Standard-Encoding
+- **Konsistente Benennung:** `camelCase` oder `snake_case`
+- **keine trailing commas**
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html
+:::
+
+
+## XML: Grundbausteine
+
+:::: {.incremental style="font-size: 2rem"}
+
+Baustein | Beispiel
+---------|-----------
+Prozessanweisung | `<?xml version="1.0"?>`
+Elemente | `<name>Wert</name>`
+Attribute | `<item id="1">`
+Text | Inhalt zwischen Tags
+Kommentare | `<!-- ... -->`
+CDATA | `<![CDATA[...]]>`
+
+::: fragment
+CDATA = *Character Data*, speichert Text ungefiltert, <br> d. h. ohne dass XML-Sonderzeichen interpretiert werden
+:::
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html
+:::
+
+
+## XML: DTD
+
+:::: {.incremental style="font-size: 2rem"}
+
+**Wozu dient die DTD (Dokumenttyp-Definition)** bei der Verwendung von XML-Dateien?
+
+- Dokumenttyp-Definition (DTD): Möglichkeit, Struktur und Inhalt von XML-Dokumenten zu definieren
+- Legt Regeln und Beschränkungen für Elemente, Attribute und deren Beziehungen in einem XML-Dokument fest
+- Stellt eine formale Beschreibung bereit, die es ermöglicht, die **Gültigkeit** und **Konformität** eines XML-Dokuments zu überprüfen
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 124
+:::
+
+
+## XML: well-formed vs. valid
+
+::::: {.incremental style="font-size: 1.8rem"}
+
+**Was  sind die Unterschiede zwischen einer *well-formed* und einer *valid* XML-Datei?**
+
+:::: columns
+::: {.column .incremental}
+
+### Well-formed
+
+- Eine *well-formed* XML-Datei erfüllt die **syntaktischen Regeln** des XML-Formats
+- folgt den XML-Konventionen: korrektes **Verschachteln** von Elementen, Verwendung von **Tags und Attribute**n gemäß XML-Spezifikation
+- kann von einem **XML-Parser** gelesen werden, **ohne** dass **Syntaxfehler** auftreten
+
+:::
+
+::: {.column .incremental}
+
+### Valid
+
+- Eine *valid* XML-Datei erfüllt nicht nur die syntaktischen Anforderungen, sondern entspricht auch den **Regeln und Einschränkungen** einer definierten **Dokumenttyp-Definition (DTD)** oder eines **XML-Schemas**
+- wird auf Konformität mit den in der DTD oder im XML-Schema festgelegten Regeln überprüft
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 125
+:::
+
+
+## XML vs. CSV
+
+::::: {style="font-size: 1.8rem"}
+
+**CSV** *(Comma-Separated Values)* und **XML** *(eXtensible Markup Language)* sind verschiedene Dateiformate, die zur Speicherung und Übertragung von strukturierten Daten verwendet werden.
+
+:::: columns
+::: {.column .incremental}
+
+### CSV
+
+- Textbasiertes Format, bei dem Daten in Tabellenform organisiert sind
+- Jede Zeile repräsentiert einen Datensatz
+- die einzelnen Werte innerhalb einer Zeile sind durch Trennzeichen getrennt
+- CSV enthält normalerweise keine Strukturinformationen oder Hierarchie
+
+:::
+
+::: {.column .incremental}
+
+### XML
+
+- Markup-Sprache, die eine hierarchische Struktur verwendet
+- Daten werden in Tags eingebettet und können hierarchisch verschachtelt werden, um komplexe Hierarchien darzustellen
+
+:::
+::::
+:::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 123
+:::
+
+
+## XML: Häufige Fehler
+
+:::: {style="font-size: 2rem"}
+
+Fehler | Beispiel
+-------|----------
+Unclosed Tags | `<name>Max`
+Wrong Nesting | ` <a><b></a></b>`
+Case Sensitivity | `<Name></name>`
+Special Chars | & unescaped
+Multiple Roots | Zwei Root-Elemente <br> Beispiel: `<kunde> ... </kunde>` <br> `<bestellung> ... </bestellung>`
+Unquoted Attrs | `<item id=1>`
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html
+:::
+
+
+## XML vs. JSON
+
+:::: {.columns style="font-size: 2rem"}
+::: {.column .incremental}
+
+### XML
+
+- XML bevorzugen bei: SOAP, Dokumenten-Formaten, XSLT, Namespaces, Attributen, Schemas (XSD)
+- XML-Vorteile: Attribute, Kommentare, Mixed Content, Namespaces, XPath / XSLT
+- oft besser für Enterprise / SOAP
+
+:::
+
+::: {.column .incremental}
+
+### JSON
+
+- JSON bevorzugen bei: REST-APIs, Konfigurationen, moderne Web-Apps, NoSQL-Datenbanken
+- JSON-Vorteile: kompakter, schneller zu parsen, native Datentypen
+- oft besser geeignet für neue Projekte
+
+:::
+
+::::
+
+::: notes
+Quelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html
+:::
+
+
+## XML: XSD, XPath, XSLT
+
+:::: {.incremental style="font-size: 2rem"}
+
+- XSD: *XML Schema Definition*, moderner Nachfolger von <br> DTD - *Document Type Definition*
+  + beschreibt und validiert XML-Dateien
+  + kann im Gegensatz zu DTD Datentypen und Wertebereiche prüfen
+  + Beispiel: Mit XSD kann man festlegen, dass `alter` eine Ganzzahl zwischen 0 und 150 sein muss
+  + DTD kann nur festlegen, dass das Element `alter` vorhanden ist und Text enthält
+- XPath: findet Elemente in XML
+- XSLT: transformiert XML in andere Formate
+
+::::
+
+
+## XSD: Beispiel
+
+:::: {.columns style="font-size: 1.8rem"}
+::: {.column width="60%"}
+
+### XSD-Schema
+
+```text
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="note">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="to" type="xs:string"/>
+    <xs:element name="from" type="xs:string"/>
+    <xs:element name="heading" type="xs:string"/>
+    <xs:element name="body" type="xs:string"/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+</xs:schema>
+```
+
+:::
+
+::: {.column .fragment width="40%"}
+
+### Passendes XML
+
+```text
+<?xml version="1.0"?>
+<note>
+ <to>Max</to>
+ <from>Lisa</from>
+ <heading>Erinnerung</heading>
+ <body>Treffen um 10 Uhr</body>
+</note>
+```
+
+:::
+::::
+
+
+---
+
+### Strukturierte vs. semi- und unstrukturierte Daten
+
+:::: {.incremental style="font-size: 1.6rem"}
+
+**Welche Unterschied bestehen zwischen strukturierten, semi-strukturierten und unstrukturierten Daten?**
+
+#### Strukturierte Daten
+
+- Klar definierte, erwartete Struktur
+- Können leicht in relationalen Datenbanken gespeichert und abgefragt werden
+
+#### Semistrukturierte Daten
+
+- Fallen irgendwo zwischen strukturierte und unstruktierte Daten
+- Haben eine gewisse Struktur, die aber nicht so streng definiert ist
+- Können Metadaten oder Tags enthalten, die den Daten Kontext und Bedeutung verleihen, wie z. B. XML und JSON-Dateien
+
+#### Unstrukturierte Daten
+
+- Haben keine spezifische Struktur
+- Kommen in vielen verschiedenen Formaten vor
+- Beispiele: Bilder, Audio- und Videodateien und Webseiten
+
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 99
+:::
 
 ## <!-- -->
 
