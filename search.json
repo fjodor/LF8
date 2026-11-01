@@ -186,7 +186,7 @@
     "href": "03_OOP_Klassendiagramm.html#vererbung-uml",
     "title": "OOP, Klassendiagramm",
     "section": "Vererbung: UML",
-    "text": "Vererbung: UML\n\n\n+----------------------------+\n|       Fahrzeug             |\n|----------------------------|\n| # marke: String            |\n| # baujahr: int             |\n|----------------------------|\n| + beschreibung(): String   |\n+----------------------------+\n         ^            ^\n         |            |\n    erbt von      erbt von\n         |            |\n+----------------+  +--------------------+\n|     PKW        |  |       LKW          |\n|----------------|  |--------------------|\n| - anzahlSitze  |  | - ladekapazitaet   |\n|----------------|  |--------------------|\n| + beschreibung |  | + beschreibung()   |\n+----------------+  +--------------------+\n\n\nPKW und LKW erben von Fahrzeug\nBeide übernehmen die protected-Attribute marke und baujahr\nBeide erhalten jeweils ein eigenes privates Attribut (anzahlSitze bzw. ladekapazität)",
+    "text": "Vererbung: UML\n\n\n+----------------------------+\n|       Fahrzeug             |\n|----------------------------|\n| # marke: String            |\n| # baujahr: int             |\n|----------------------------|\n| + beschreibung(): String   |\n+----------------------------+\n         ^                ^\n         |                |\n    erbt von         erbt von\n         |                |\n+------------------+  +--------------------+\n|     PKW          |  |       LKW          |\n|------------------|  |--------------------|\n| - anzahlSitze    |  | - ladekapazitaet   |\n|------------------|  |--------------------|\n| + beschreibung() |  | + beschreibung()   |\n+------------------+  +--------------------+\n\n\nPKW und LKW erben von Fahrzeug\nBeide übernehmen die protected-Attribute marke und baujahr\nBeide erhalten jeweils ein eigenes privates Attribut (anzahlSitze bzw. ladekapazität)",
     "crumbs": [
       "03 OOP Klassendiagramm"
     ]
@@ -216,7 +216,7 @@
     "href": "03_OOP_Klassendiagramm.html#polymorphie-zwei-arten",
     "title": "OOP, Klassendiagramm",
     "section": "Polymorphie: Zwei Arten",
-    "text": "Polymorphie: Zwei Arten\n\n\n\n\n\n\n\n\n\n\nArt\nBeschreibung\nBeispiel\n\n\n\n\nÜberladen (Overloading)\nGleicher Methodenname, verschiedene Parameter\nberechne(a) und berechne(a, b)\n\n\nÜberschreiben (Overriding)\nKindklasse überschreibt Methode der Elternklasse\nHund.sprechen() statt Tier.sprechen()",
+    "text": "Polymorphie: Zwei Arten\n\n\n\n\n\n\n\n\n\n\nArt\nBeschreibung\nBeispiel\n\n\n\n\nÜberladen (Overloading)\nGleicher Methodenname, verschiedene Parameter  statische Polymorphie\nberechne(a) und berechne(a, b)\n\n\nÜberschreiben (Overriding)\nKindklasse überschreibt Methode der Elternklasse  dynamische Polymorphie\nHund.sprechen() statt Tier.sprechen()",
     "crumbs": [
       "03 OOP Klassendiagramm"
     ]
@@ -336,7 +336,7 @@
     "href": "01_Willkommen_Struktur.html#zeitplan-und-noten",
     "title": "Willkommen in LF8!",
     "section": "Zeitplan und Noten",
-    "text": "Zeitplan und Noten\n\nLF8 über das Schuljahr verteilt, parallel zu LF7\nKlassenarbeit am 3. November: Algorithmen, Grundlagen der OOP\nKlassenarbeit am 29. Januar: Datenbank-Grundlagen, Entity-Relationship-Modell (ER-Modell)\nPraxisteil von LF8 bei Herrn Lötzsch",
+    "text": "Zeitplan und Noten\n\nLF8 über das Schuljahr verteilt, parallel zu LF7\nKlassenarbeit am 3. November verschoben auf 10. November: Algorithmen, Grundlagen der OOP, CSV, XML, JSON\nKlassenarbeit am 29. Januar: Datenbank-Grundlagen, Entity-Relationship-Modell (ER-Modell)\nPraxisteil von LF8 bei Herrn Lötzsch",
     "crumbs": [
       "01 Willkommen zu LF8 - Themen und Zeitplan"
     ]
@@ -346,7 +346,7 @@
     "href": "01_Willkommen_Struktur.html#sus-vorträge",
     "title": "Willkommen in LF8!",
     "section": "SuS Vorträge",
-    "text": "SuS Vorträge\nca. 10 Minuten; Teamarbeit zu zweit möglich: dann tragen beide je einen Teil vor\n\nMontag, 07. September:\nEinführung in OOP: Was sind Klassen, was sind Objekte im Sinne der OOP?\nJustin, Sven\nMontag, 02. November:\n\nDas Dateiformat csv: Aufbau, Lesbarkeit; Was sind csv Injections? Fridolin\nDas Dateiformat XML: Aufbau, Lesbarkeit, Einsatz-Beispiele: Noah\nDas Dateiformat JSON: Aufbau, Lesbarkeit, Einsatz-Beispiele: Jason\n\nDienstag, 10. November:\nEinführung in REST-APIs: Nutzen, Aufbau, Einsatz-Beispiele: Oli, Rudi\nMontag, 14. Dezember:\n\nEinführung in NoSQL-Datenbanken: Grundideen, Einsatz-Beispiele: Fabius, Tobi\nRelationale Datenbanken: Datenbank-Anomalien\nWelche Anomalien gibt es? Wie entstehen sie? Irka, Léon",
+    "text": "SuS Vorträge\nca. 10 Minuten; Teamarbeit zu zweit möglich: dann tragen beide je einen Teil vor\n\nMontag, 07. September:\nEinführung in OOP: Was sind Klassen, was sind Objekte im Sinne der OOP?\nJustin, Sven\nMontag, 02. November:\n\nDas Dateiformat csv: Aufbau, Lesbarkeit; Was sind csv Injections? Fridolin\nDas Dateiformat XML: Aufbau, Lesbarkeit, Einsatz-Beispiele: Noah\nDas Dateiformat JSON: Aufbau, Lesbarkeit, Einsatz-Beispiele: Jason\n\nDienstag, 10. November (nach Klassenarbeit):\nEinführung in REST-APIs: Nutzen, Aufbau, Einsatz-Beispiele: Oli, Rudi\nMontag, 14. Dezember:\n\nEinführung in NoSQL-Datenbanken: Grundideen, Einsatz-Beispiele: Fabius, Tobi\nRelationale Datenbanken: Datenbank-Anomalien\nWelche Anomalien gibt es? Wie entstehen sie? Irka, Léon",
     "crumbs": [
       "01 Willkommen zu LF8 - Themen und Zeitplan"
     ]
@@ -412,11 +412,31 @@
     ]
   },
   {
+    "objectID": "02_Algorithmen.html#python-tutorial",
+    "href": "02_Algorithmen.html#python-tutorial",
+    "title": "Python und Algorithmen",
+    "section": "Python Tutorial",
+    "text": "Python Tutorial\n\n\nPython Tutorial von J. Lötzsch:\nhttps://johannesloetzsch.github.io/python-tutorial/index.html\n\nOnline Python:\nhttps://www.online-python.com/",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
     "objectID": "02_Algorithmen.html#sortieralgorithmen-bubble-sort",
     "href": "02_Algorithmen.html#sortieralgorithmen-bubble-sort",
     "title": "Python und Algorithmen",
     "section": "Sortieralgorithmen: Bubble Sort",
     "text": "Sortieralgorithmen: Bubble Sort\n\nVergleicht wiederholt benachbarte Elemente und vertauscht sie, wenn sie sich in der falschen Reihenfolge befinden\nGrößte Elemente “wandern” pro Durchlauf nach rechts (wie Blasen nach oben)\nWird wiederholt, bis keine Vertauschungen mehr nötig sind\nVorteil: relativ einfach zu verstehen\nNachteil: ineffizient bei großen Datenmengen\nLaufzeit: O(n²)",
+    "crumbs": [
+      "02 Algorithmen"
+    ]
+  },
+  {
+    "objectID": "02_Algorithmen.html#was-bedeutet-on²",
+    "href": "02_Algorithmen.html#was-bedeutet-on²",
+    "title": "Python und Algorithmen",
+    "section": "Was bedeutet O(n²)?",
+    "text": "Was bedeutet O(n²)?\n\nAussprache: „O von n Quadrat“\nO steht für „Order of“ → beschreibt die Größenordnung des Wachstums\nn ist die Eingabegröße (z. B. Anzahl der Listenelemente)\nQuadratisches Wachstum: Verdoppelt man n, vervierfacht sich die Laufzeit\nTypisch bei Algorithmen mit verschachtelten Schleifen",
     "crumbs": [
       "02 Algorithmen"
     ]
@@ -436,7 +456,7 @@
     "href": "02_Algorithmen.html#python-doctests",
     "title": "Python und Algorithmen",
     "section": "Python: doctests",
-    "text": "Python: doctests\nDoctests sind eingebettete Tests in Docstrings, die wie interaktive Python‑Beispiele aussehen (&gt;&gt;&gt;).\nZweck:\n\nDokumentation und Test in einem Schritt\nZeigen, wie eine Funktion benutzt wird\nPrüfen automatisch, ob die Beispiele noch stimmen",
+    "text": "Python: doctests\nDoctests sind eingebettete Tests in Docstrings, die wie interaktive Python‑Beispiele aussehen (&gt;&gt;&gt;).\nZweck:\n\nDokumentation und Test in einem Schritt\nZeigen, wie eine Funktion benutzt wird\nPrüfen automatisch, ob die Beispiele noch stimmen\n\nDokumentation: https://docs.python.org/3/library/doctest.html",
     "crumbs": [
       "02 Algorithmen"
     ]
@@ -447,16 +467,6 @@
     "title": "Python und Algorithmen",
     "section": "Python: doctests",
     "text": "Python: doctests\nBeispiel:\ndef add(a, b):\n    \"\"\"\n    Add two numbers.\n\n    &gt;&gt;&gt; add(2, 3)\n    5\n    \"\"\"\n    return a + b",
-    "crumbs": [
-      "02 Algorithmen"
-    ]
-  },
-  {
-    "objectID": "02_Algorithmen.html#was-bedeutet-on²",
-    "href": "02_Algorithmen.html#was-bedeutet-on²",
-    "title": "Python und Algorithmen",
-    "section": "Was bedeutet O(n²)?",
-    "text": "Was bedeutet O(n²)?\n\nAussprache: „O von n Quadrat“\nO steht für „Order of“ → beschreibt die Größenordnung des Wachstums\nn ist die Eingabegröße (z. B. Anzahl der Listenelemente)\nQuadratisches Wachstum: Verdoppelt man n, vervierfacht sich die Laufzeit\nTypisch bei Algorithmen mit verschachtelten Schleifen",
     "crumbs": [
       "02 Algorithmen"
     ]
