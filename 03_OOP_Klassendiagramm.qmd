@@ -559,6 +559,36 @@ Schreibweise | Bedeutung | Erklärung
 ::::
 
 
+## Komposition vs. Aggregation
+
+:::: {.columns style="font-size: 1.8rem"}
+::: {.column .incremental}
+
+### Aggregation
+
+- lose Beziehung zwischen zwei Klassen
+- eine Klasse (das Ganze) **enthält** Sammlung oder Gruppe von Objekten einer anderen Klasse (die Teile)
+- Beziehung zwischen dem Ganzen und den Teilen ist **optional: das Ganze kann ohne die Teile existieren**
+
+:::
+
+::: {.column .incremental}
+
+### Komposition
+
+- starke Beziehung zwischen zwei Klassen
+- eine Klasse (das Ganze) **besteht aus** einer anderen Klasse (dem Teil)
+- **Teile können nur als Teil des Ganzen existieren** und haben keine eigenständige Existenz
+- Wenn das Ganze zerstört wird, werden auch die Teile zerstört
+
+:::
+::::
+
+::: notes
+Lernkarte AP2 2025 Nr. 132
+:::
+
+
 ## Klassendiagramm: Erläuterung
 
 :::: {style="font-size: 1.8rem"}
