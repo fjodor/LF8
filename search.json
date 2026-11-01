@@ -35,11 +35,11 @@
     "text": "REST: HTTP-Methoden\nCRUD = Create - Read - Update - Delete\n\n\n\n\n\n\n\n\n\n\nHTTP-Methode\nCRUD-Operation\nBeschreibung\nBeispiel\n\n\n\n\nGET\nRead\nRessource abrufen\nGET /api/kunden/42\n\n\nPOST\nCreate\nNeue Ressource erstellen\nPOST /api/kunden\n\n\nPUT\nUpdate\nRessource vollständig ersetzen\nPUT /api/kunden/42\n\n\nPATCH\nUpdate (teilweise)\nRessource teilweise ändern\nPATCH /api/kunden/42\n\n\nDELETE\nDelete\nRessource löschen\nDELETE /api/kunden/42"
   },
   {
-    "objectID": "05_REST-SOAP.html#vielen-dank",
-    "href": "05_REST-SOAP.html#vielen-dank",
+    "objectID": "05_REST-SOAP.html#section",
+    "href": "05_REST-SOAP.html#section",
     "title": "REST und SOAP",
-    "section": "Vielen Dank!",
-    "text": "Vielen Dank!\n\n\nViel Erfolg!"
+    "section": "",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
   },
   {
     "objectID": "03_OOP_Klassendiagramm.html#oop-blick-in-die-geschichte",
@@ -287,6 +287,16 @@
     "title": "OOP, Klassendiagramm",
     "section": "Komposition, Aggregation",
     "text": "Komposition, Aggregation\n\n\n\nQuelle: Kakashi-Madara, Wikimedia Commons\n\n\nRaum kann nicht ohne Gebäude existieren: starke Beziehung, Komposition\nStudent kann ohne Vorlesung existieren: lose Beziehung, Aggregation\nKardinalitäten beachten",
+    "crumbs": [
+      "03 OOP Klassendiagramm"
+    ]
+  },
+  {
+    "objectID": "03_OOP_Klassendiagramm.html#komposition-vs.-aggregation",
+    "href": "03_OOP_Klassendiagramm.html#komposition-vs.-aggregation",
+    "title": "OOP, Klassendiagramm",
+    "section": "Komposition vs. Aggregation",
+    "text": "Komposition vs. Aggregation\n\n\nAggregation\n\nlose Beziehung zwischen zwei Klassen\neine Klasse (das Ganze) enthält Sammlung oder Gruppe von Objekten einer anderen Klasse (die Teile)\nBeziehung zwischen dem Ganzen und den Teilen ist optional: das Ganze kann ohne die Teile existieren\n\n\nKomposition\n\nstarke Beziehung zwischen zwei Klassen\neine Klasse (das Ganze) besteht aus einer anderen Klasse (dem Teil)\nTeile können nur als Teil des Ganzen existieren und haben keine eigenständige Existenz\nWenn das Ganze zerstört wird, werden auch die Teile zerstört\n\n\n\nLernkarte AP2 2025 Nr. 132",
     "crumbs": [
       "03 OOP Klassendiagramm"
     ]
@@ -556,7 +566,7 @@
     "href": "02_Algorithmen.html#section",
     "title": "Python und Algorithmen",
     "section": "",
-    "text": "Viel Erfolg mit allen Algorithmen!",
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!",
     "crumbs": [
       "02 Algorithmen"
     ]
@@ -566,14 +576,175 @@
     "href": "04_Dateiformate.html#ziele",
     "title": "Dateiformate",
     "section": "Ziele",
-    "text": "Ziele"
+    "text": "Ziele\n\nCSV, JSON, XML\n\nDateiformate erkennen und unterscheiden\nAnwendungsbereiche kennen\nGültige und fehlerhafte Notationen erkennen"
+  },
+  {
+    "objectID": "04_Dateiformate.html#csv-grundlagen",
+    "href": "04_Dateiformate.html#csv-grundlagen",
+    "title": "Dateiformate",
+    "section": "CSV: Grundlagen",
+    "text": "CSV: Grundlagen\n\n\nCSV = Comma-Separated Values\nTextbasiertes Format zur Speicherung tabellarischer Daten\nJede Zeile entspricht einem Datensatz\nWerte innerhalb einer Zeile werden durch ein Trennzeichen (Separator) getrennt\nVon fast allen Datenbank-, Tabellenkalkulations- und Statistikprogrammen unterstützt\n\n\nBeispiel\nID,Name,Ort\n1,Müller,Dresden\n2,Schmidt,Leipzig\n3,Meier,Chemnitz"
+  },
+  {
+    "objectID": "04_Dateiformate.html#csv-separatoren",
+    "href": "04_Dateiformate.html#csv-separatoren",
+    "title": "Dateiformate",
+    "section": "csv: Separatoren",
+    "text": "csv: Separatoren\n\n\n\n\nDeutschland / Europa häufig:\nID;Name;Ort\n1;Müller;Dresden\n\nInternational häufig:\nID,Name,Ort\n1,Müller,Dresden\n\n\nWarum unterschiedliche Separatoren?\n\nDeutschsprachige Excel-Versionen verwenden oft das Semikolon (;)\nIn vielen Ländern ist das Komma (,) Dezimaltrennzeichen\nDas eigentliche Trennzeichen muss beim Import bekannt sein"
+  },
+  {
+    "objectID": "04_Dateiformate.html#csv-zeichencodierung",
+    "href": "04_Dateiformate.html#csv-zeichencodierung",
+    "title": "Dateiformate",
+    "section": "csv: Zeichencodierung",
+    "text": "csv: Zeichencodierung\n\n\nUTF-8\n\nheute Standard\nenthält fast alle Schriftzeichen der Welt\nhohe Kompatibilität\n\nVeraltete Codierungsstandards: ISO-8859-1; Windows-1252\nCodierung wie “Legende”: Welcher Buchstabe gehört zu welchem Zahlenwert?\nFalsche Codierung führt zu Problemen:\nMüller  →  MÃ¼ller"
+  },
+  {
+    "objectID": "04_Dateiformate.html#csv-einsatzbereiche",
+    "href": "04_Dateiformate.html#csv-einsatzbereiche",
+    "title": "Dateiformate",
+    "section": "csv: Einsatzbereiche",
+    "text": "csv: Einsatzbereiche\n\n\nDatenimport -und -export\nDatenaustausch zwischen Anwendungen\nBereitstellung offener Daten (Open Data)\n\nNachteile\n\nHoher Speicherbedarf im Vergleich zu anderen Dateiformaten zur Datenverarbeitung (z. B. in Python oder R)\nZeilenbasiert: Beim Laden großer Datenmengen kann man nicht nur bestimmte Spalten auswählen"
+  },
+  {
+    "objectID": "04_Dateiformate.html#csv-injection",
+    "href": "04_Dateiformate.html#csv-injection",
+    "title": "Dateiformate",
+    "section": "csv Injection",
+    "text": "csv Injection\n\n\n\n\n\n\n\n\n\nProblem: Tabellenkalkulationsprogramme können CSV-Inhalte als Formeln interpretieren.\n\n\n\n\n\nBeispiele: Ein Angreifer trägt folgenden Wert ein:\n\n=HYPERLINK(\"http://angreifer.de\")\n=cmd|' /C calc'!A0 (“führe folgenden Befehl aus, beende dann Eingabeaufforderung; starte Windows-Taschenrechner”)"
+  },
+  {
+    "objectID": "04_Dateiformate.html#csv-injection-schutz",
+    "href": "04_Dateiformate.html#csv-injection-schutz",
+    "title": "Dateiformate",
+    "section": "csv Injection: Schutz",
+    "text": "csv Injection: Schutz\n\n\nGefährliche Präfixe\n\n=\n+\n-\n@\n\n\nSchutzmaßnahmen\n\nPotenziell gefährliche Werte maskieren\nFührendes Apostroph ergänzen: '=SUM(A1:A10)\nCSV-Dateien aus unbekannten Quellen mit Vorsichert öffnen\nImportfunktionen nutzen statt Direktöffnen"
+  },
+  {
+    "objectID": "04_Dateiformate.html#json-datentypen",
+    "href": "04_Dateiformate.html#json-datentypen",
+    "title": "Dateiformate",
+    "section": "JSON: Datentypen",
+    "text": "JSON: Datentypen\n\n6 Datentypen in JSON:\n\n\n\nDatentyp\nBeispiel\n\n\n\n\nString\n\"Hallo Welt\"\n\n\nNumber\n42 oder 3.14\n\n\nBoolean\ntrue oder false\n\n\nNull\nnull\n\n\nObject\n{\"key\": \"value\" }\n\n\nArray\n[1, 2, 3]\n\n\n\nDetails siehe RFC 8259\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "04_Dateiformate.html#json-anwendung",
+    "href": "04_Dateiformate.html#json-anwendung",
+    "title": "Dateiformate",
+    "section": "JSON: Anwendung",
+    "text": "JSON: Anwendung\n\n\nREST-APIs: Standardformat für Datenaustausch im Web\nKonfigurationsdateien: package.json, tsconfig.json\nNoSQL-Datenbanken: MongoDB, CouchDB speichern JSON\nLogs: Strukturierte Log-Ausgabe\nFrontend-Backend-Kommunikation: Fetch, AJAX, WebSockets\nJWT Tokens: Payload ist Base64-codiertes JSON\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "04_Dateiformate.html#json-einfaches-beispiel",
+    "href": "04_Dateiformate.html#json-einfaches-beispiel",
+    "title": "Dateiformate",
+    "section": "JSON: Einfaches Beispiel",
+    "text": "JSON: Einfaches Beispiel\n{\n  \"vorname\": \"Max\",\n  \"nachname\": \"Mustermann\",\n  \"alter\": 30,\n  \"aktiv\": true,\n  \"stadt\": \"Berlin\"\n}"
+  },
+  {
+    "objectID": "04_Dateiformate.html#json-verschachtelung",
+    "href": "04_Dateiformate.html#json-verschachtelung",
+    "title": "Dateiformate",
+    "section": "JSON: Verschachtelung",
+    "text": "JSON: Verschachtelung\n{\n  \"mitarbeiterId\": \"E123\",\n  \"name\": \"Anna Schmidt\",\n  \"position\": \"Softwareentwicklerin\",\n  \"adresse\": {\n    \"strasse\": \"Hauptstraße 42\",\n    \"plz\": \"10115\",\n    \"stadt\": \"Berlin\"\n  },\n  \"kontakt\": {\n    \"email\": \"anna.schmidt@example.com\",\n    \"telefon\": \"+49 30 123456\"\n  }\n}"
+  },
+  {
+    "objectID": "04_Dateiformate.html#json-mit-arrays",
+    "href": "04_Dateiformate.html#json-mit-arrays",
+    "title": "Dateiformate",
+    "section": "JSON mit Arrays",
+    "text": "JSON mit Arrays\n\n{\n  \"name\": \"Maria\",\n  \"hobbys\": [\n    \"lesen\",\n    \"fotografieren\",\n    \"wandern\"\n  ],\n  \"bestellungen\": [\n    {\n      \"bestellungsId\": 101,\n      \"betrag\": 45.99,\n      \"bezahlt\": true\n    },\n    {\n      \"bestellungsId\": 102,\n      \"betrag\": 12.50,\n      \"bezahlt\": false\n    }\n  ]\n}"
+  },
+  {
+    "objectID": "04_Dateiformate.html#json-vs.-javascript-objekt",
+    "href": "04_Dateiformate.html#json-vs.-javascript-objekt",
+    "title": "Dateiformate",
+    "section": "JSON vs. JavaScript-Objekt",
+    "text": "JSON vs. JavaScript-Objekt\n\n\n\n\n\n\n\n\n\nKriterium\nJSON\nJavaScript-Objekt (JS)\n\n\n\n\nKeys: doppelte Anführungszeichen\nerforderlich\nnicht erforderlich\n\n\nTrailing Comma\nverboten\nerlaubt\n\n\nKommentare\nverboten\nerlaubt\n\n\nWerte\nnur 6 Typen\nauch undefined, NaN, Funktionen\n\n\nPrototyp\nkeiner\nEigenschaften und Methoden können von Prototyp geerbt werden\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "04_Dateiformate.html#json-häufige-fehler",
+    "href": "04_Dateiformate.html#json-häufige-fehler",
+    "title": "Dateiformate",
+    "section": "JSON: Häufige Fehler",
+    "text": "JSON: Häufige Fehler\n\n\n\n\nFehler\nBeispiel\n\n\n\n\nTrailing Comma\n{\"a\":1,}\n\n\nSingle Quotes\n{'a':'b'}\n\n\nUnquoted Keys\n{a:1}\n\n\nKommentare\n// comment\n\n\nUndefined\nundefined\n\n\nNaN / Infinity\nNaN\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "04_Dateiformate.html#json-verschachtelung-1",
+    "href": "04_Dateiformate.html#json-verschachtelung-1",
+    "title": "Dateiformate",
+    "section": "JSON: Verschachtelung",
+    "text": "JSON: Verschachtelung\n\nJSON kann beliebig verschachtelt werden:\n\n\n\nVerschachtelungs-Typ\nBeispiel\n\n\n\n\nObjekte in Objekten\n{\"user\": {\"name\": \"Max\"}}\n\n\nArrays in Objekten\n{\"tags\": [\"a\", \"b\"]}\n\n\nArrays von Objekten\n[{\"id\": 1}, {\"id\": 2}]\n\n\nBeliebig tief\ntheoretisch unbegrenzt\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "04_Dateiformate.html#json-best-practices",
+    "href": "04_Dateiformate.html#json-best-practices",
+    "title": "Dateiformate",
+    "section": "JSON: Best Practices",
+    "text": "JSON: Best Practices\n\nSo schreibst Du gutes JSON:\n\nDoppelte Anführungszeichen für Strings und Keys\n2 oder 4 Spaces für Einrückung\nKeine Kommentare (nicht erlaubt in JSON)\nUTF-8 als Standard-Encoding\nKonsistente Benennung: camelCase oder snake_case\nkeine trailing commas\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/json-formatter-validator.html"
+  },
+  {
+    "objectID": "04_Dateiformate.html#xml-grundbausteine",
+    "href": "04_Dateiformate.html#xml-grundbausteine",
+    "title": "Dateiformate",
+    "section": "XML: Grundbausteine",
+    "text": "XML: Grundbausteine\n\n\n\n\nBaustein\nBeispiel\n\n\n\n\nProzessanweisung\n&lt;?xml version=\"1.0\"?&gt;\n\n\nElemente\n&lt;name&gt;Wert&lt;/name&gt;\n\n\nAttribute\n&lt;item id=\"1\"&gt;\n\n\nText\nInhalt zwischen Tags\n\n\nKommentare\n&lt;!-- ... --&gt;\n\n\nCDATA\n&lt;![CDATA[...]]&gt;\n\n\n\n\nCDATA = Character Data, speichert Text ungefiltert,  d. h. ohne dass XML-Sonderzeichen interpretiert werden\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
+  },
+  {
+    "objectID": "04_Dateiformate.html#xml-dtd",
+    "href": "04_Dateiformate.html#xml-dtd",
+    "title": "Dateiformate",
+    "section": "XML: DTD",
+    "text": "XML: DTD\n\nWozu dient die DTD (Dokumenttyp-Definition) bei der Verwendung von XML-Dateien?\n\nDokumenttyp-Definition (DTD): Möglichkeit, Struktur und Inhalt von XML-Dokumenten zu definieren\nLegt Regeln und Beschränkungen für Elemente, Attribute und deren Beziehungen in einem XML-Dokument fest\nStellt eine formale Beschreibung bereit, die es ermöglicht, die Gültigkeit und Konformität eines XML-Dokuments zu überprüfen\n\n\n\nLernkarte AP2 2025 Nr. 124"
+  },
+  {
+    "objectID": "04_Dateiformate.html#xml-well-formed-vs.-valid",
+    "href": "04_Dateiformate.html#xml-well-formed-vs.-valid",
+    "title": "Dateiformate",
+    "section": "XML: well-formed vs. valid",
+    "text": "XML: well-formed vs. valid\n\nWas sind die Unterschiede zwischen einer well-formed und einer valid XML-Datei?\n\n\nWell-formed\n\nEine well-formed XML-Datei erfüllt die syntaktischen Regeln des XML-Formats\nfolgt den XML-Konventionen: korrektes Verschachteln von Elementen, Verwendung von Tags und Attributen gemäß XML-Spezifikation\nkann von einem XML-Parser gelesen werden, ohne dass Syntaxfehler auftreten\n\n\nValid\n\nEine valid XML-Datei erfüllt nicht nur die syntaktischen Anforderungen, sondern entspricht auch den Regeln und Einschränkungen einer definierten Dokumenttyp-Definition (DTD) oder eines XML-Schemas\nwird auf Konformität mit den in der DTD oder im XML-Schema festgelegten Regeln überprüft\n\n\n\n\nLernkarte AP2 2025 Nr. 125"
+  },
+  {
+    "objectID": "04_Dateiformate.html#xml-vs.-csv",
+    "href": "04_Dateiformate.html#xml-vs.-csv",
+    "title": "Dateiformate",
+    "section": "XML vs. CSV",
+    "text": "XML vs. CSV\n\nCSV (Comma-Separated Values) und XML (eXtensible Markup Language) sind verschiedene Dateiformate, die zur Speicherung und Übertragung von strukturierten Daten verwendet werden.\n\n\nCSV\n\nTextbasiertes Format, bei dem Daten in Tabellenform organisiert sind\nJede Zeile repräsentiert einen Datensatz\ndie einzelnen Werte innerhalb einer Zeile sind durch Trennzeichen getrennt\nCSV enthält normalerweise keine Strukturinformationen oder Hierarchie\n\n\nXML\n\nMarkup-Sprache, die eine hierarchische Struktur verwendet\nDaten werden in Tags eingebettet und können hierarchisch verschachtelt werden, um komplexe Hierarchien darzustellen\n\n\n\n\nLernkarte AP2 2025 Nr. 123"
+  },
+  {
+    "objectID": "04_Dateiformate.html#xml-häufige-fehler",
+    "href": "04_Dateiformate.html#xml-häufige-fehler",
+    "title": "Dateiformate",
+    "section": "XML: Häufige Fehler",
+    "text": "XML: Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nBeispiel\n\n\n\n\nUnclosed Tags\n&lt;name&gt;Max\n\n\nWrong Nesting\n&lt;a&gt;&lt;b&gt;&lt;/a&gt;&lt;/b&gt;\n\n\nCase Sensitivity\n&lt;Name&gt;&lt;/name&gt;\n\n\nSpecial Chars\n& unescaped\n\n\nMultiple Roots\nZwei Root-Elemente  Beispiel: &lt;kunde&gt; ... &lt;/kunde&gt;  &lt;bestellung&gt; ... &lt;/bestellung&gt;\n\n\nUnquoted Attrs\n&lt;item id=1&gt;\n\n\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
+  },
+  {
+    "objectID": "04_Dateiformate.html#xml-vs.-json",
+    "href": "04_Dateiformate.html#xml-vs.-json",
+    "title": "Dateiformate",
+    "section": "XML vs. JSON",
+    "text": "XML vs. JSON\n\n\nXML\n\nXML bevorzugen bei: SOAP, Dokumenten-Formaten, XSLT, Namespaces, Attributen, Schemas (XSD)\nXML-Vorteile: Attribute, Kommentare, Mixed Content, Namespaces, XPath / XSLT\noft besser für Enterprise / SOAP\n\n\nJSON\n\nJSON bevorzugen bei: REST-APIs, Konfigurationen, moderne Web-Apps, NoSQL-Datenbanken\nJSON-Vorteile: kompakter, schneller zu parsen, native Datentypen\noft besser geeignet für neue Projekte\n\n\n\nQuelle: https://itgrundlagen.com/14-interaktive-tools/03-entwickler-tools/xml-formatter-validator.html"
+  },
+  {
+    "objectID": "04_Dateiformate.html#xml-xsd-xpath-xslt",
+    "href": "04_Dateiformate.html#xml-xsd-xpath-xslt",
+    "title": "Dateiformate",
+    "section": "XML: XSD, XPath, XSLT",
+    "text": "XML: XSD, XPath, XSLT\n\n\nXSD: XML Schema Definition, moderner Nachfolger von  DTD - Document Type Definition\n\nbeschreibt und validiert XML-Dateien\nkann im Gegensatz zu DTD Datentypen und Wertebereiche prüfen\nBeispiel: Mit XSD kann man festlegen, dass alter eine Ganzzahl zwischen 0 und 150 sein muss\nDTD kann nur festlegen, dass das Element alter vorhanden ist und Text enthält\n\nXPath: findet Elemente in XML\nXSLT: transformiert XML in andere Formate"
+  },
+  {
+    "objectID": "04_Dateiformate.html#xsd-beispiel",
+    "href": "04_Dateiformate.html#xsd-beispiel",
+    "title": "Dateiformate",
+    "section": "XSD: Beispiel",
+    "text": "XSD: Beispiel\n\n\nXSD-Schema\n&lt;?xml version=\"1.0\"?&gt;\n&lt;xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"&gt;\n &lt;xs:element name=\"note\"&gt;\n  &lt;xs:complexType&gt;\n   &lt;xs:sequence&gt;\n    &lt;xs:element name=\"to\" type=\"xs:string\"/&gt;\n    &lt;xs:element name=\"from\" type=\"xs:string\"/&gt;\n    &lt;xs:element name=\"heading\" type=\"xs:string\"/&gt;\n    &lt;xs:element name=\"body\" type=\"xs:string\"/&gt;\n   &lt;/xs:sequence&gt;\n  &lt;/xs:complexType&gt;\n &lt;/xs:element&gt;\n&lt;/xs:schema&gt;\n\nPassendes XML\n&lt;?xml version=\"1.0\"?&gt;\n&lt;note&gt;\n &lt;to&gt;Max&lt;/to&gt;\n &lt;from&gt;Lisa&lt;/from&gt;\n &lt;heading&gt;Erinnerung&lt;/heading&gt;\n &lt;body&gt;Treffen um 10 Uhr&lt;/body&gt;\n&lt;/note&gt;"
   },
   {
     "objectID": "04_Dateiformate.html#section",
     "href": "04_Dateiformate.html#section",
     "title": "Dateiformate",
     "section": "",
-    "text": "Viel Erfolg!"
+    "text": "©torange.biz CC-BY 4.0\n\n\nViel Erfolg!"
   },
   {
     "objectID": "index.html",
