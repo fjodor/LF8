@@ -275,7 +275,8 @@ Zugriffs-<br>modifikator | Symbol | Bedeutung | Verwendung
 - eine Klasse *(Kindklasse)* kann Attribute und Methoden einer anderen Klasse *(Elternklasse)* übernehmen
 - fördert **Wiederverwendbarkeit** und **Hierarchiebildung**; vermeidet **Redundanz**
 - **Kindklasse** heißt auch **abgeleitete Klasse** oder **Unterklasse**
-- **Elternklasse** heißt auch **Oberklasse** oder **Basisklasse**
+- **Elternklasse** heißt auch **Oberklasse, Basisklasse** oder **Superklasse**
+
 :::
 
 ::: notes
